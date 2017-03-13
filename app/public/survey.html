@@ -36,21 +36,31 @@
                                 <input type="text" class="form-control" id="friend-user">
                             </div>
                             <div class="form-group">
-                                <label for="friend-number">Phone Number</label>
+                                <label for="friend-phone">Phone Number</label>
                                 <input type="text" class="form-control" id="friend-number">
                             </div>
+                            <div class="form-group">
+                                <label for="friend-image">Image url (must be a full link to an image file)</label>
+                                <input type="text" class="form-control" id="friend-image">
+                            </div>
+                            <div class="form-group">
+                                <label for="friend-bio">Short Bio</label>
+                                <input type="text" class="form-control" id="friend-bio">
+                            </div>
+                            <h4>Are you male or female</h4>
+                            <select data-placeholder="" class="chosen-select" id="gender">
+                                <option value=""></option>
+                                <option value="male">male</option>
+                                <option value="female">female</option>
+                            </select>
+                            <br>
+                            <br>
                             <button type="submit" class="btn btn-primary submit">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <h4>Are you male or female</h4>
-        <select data-placeholder="" class="chosen-select" id="gender">
-            <option value=""></option>
-            <option value="male">male</option>
-            <option value="female">female</option>
-        </select>
         <h4>What is an acceptable age range for your match</h4>
         <select data-placeholder="" class="chosen-select" id="ageRange">
             <option value=""></option>
@@ -160,6 +170,26 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <br>
+        <h2> Preferences </h2>
+        <h4>Are there any qualities and/or activities that you wish you and your match shared? </h4>
+        <select data-placeholder="" class="chosen-select" id="highGravity">
+            <option value=""></option>
+            <option value="leisure">relaxation and leisure</option>
+            <option value="morals">morality</option>
+            <option value="superficiality">superficiality</option>
+            <option value="interests">interests</option>
+            <option value="random">random</option>
+        </select>
+        <h4>Are there any qualities and/or activities that are not very important to you in the matching process? </h4>
+        <select data-placeholder="" class="chosen-select" id="lowGravity">
+            <option value=""></option>
+            <option value="leisure">relaxation and leisure</option>
+            <option value="morals">morality</option>
+            <option value="superficiality">superficiality</option>
+            <option value="interests">interests</option>
+            <option value="random">random</option>
+        </select>
+        <br>
         <br>
         <!-- Submit Button -->
         <button class="submitSurvey">Submit</button>
@@ -198,7 +228,10 @@
             friendName: $("#friend-name").val().trim(),
             friendEmail: $("#friend-email").val().trim(),
             friendUserName: $("#friend-user").val().trim(),
-            phoneNumber: $("#friend-number").val().trim()
+            phoneNumber: $("#friend-number").val().trim(),
+            imageUrl: $("#friend-image").val().trim(),
+            shortBio: $("#friend-bio").val().trim(),
+            gender: $("#gender").val()
         };
 
         console.log(newFriend);
@@ -221,10 +254,13 @@
                 console.log(data[0]);
 
                 // Clear the form when submitting
-                $("#reserve-name").val("");
-                $("#reserve-phone").val("");
-                $("#reserve-email").val("");
-                $("#reserve-unique-id").val("");
+                $("#friend-name").val("");
+                $("#friend-email").val("");
+                $("#friend-user").val("");
+                $("#friend-number").val("");
+                $("#friend-image").val("");
+                $("#friend-bio").val("");
+                $("#gender").val("");
             });
     });
 
