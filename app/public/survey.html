@@ -193,8 +193,18 @@
       // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
       // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
       // depending on if a tables is available or not.
-      $.post("/api/friends", newFriend,
-        function(data) {
+         
+
+    // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+    $.ajax({
+            url: "/api/friends",
+            data: newFriend,
+            method: "POST"
+        })
+        .done(function(data) {
+      // $.post("/api/friends", newFriend,
+      //   function(data) {
+            console.log(data);
           
           // Clear the form when submitting
           $("#reserve-name").val("");

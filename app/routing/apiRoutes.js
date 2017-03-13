@@ -4,8 +4,8 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var tableData = require("../data/tableData");
-var waitListData = require("../data/waitinglistData");
+// var tableData = require("../data/tableData");
+// var waitListData = require("../data/waitinglistData");
 var matchesData = require("../data/matches.js");
 var friendsData = require("../data/friends.js");
 
@@ -41,13 +41,10 @@ module.exports = function(app) {
     // It will do this by sending out the value "true" have a table
 
       friendsData.push(req.body);
-      res.json(false);
+      res.json(friendsData);
     
   
   });
 
-  // ---------------------------------------------------------------------------
-  // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
 
 };
