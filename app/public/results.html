@@ -55,10 +55,21 @@
         </footer>
     </div>
     <script>
-
+    // function Profile(name, imageUrl, leisureAvg, moralsAvg, interestsAvg, superficialityAvg, multiplyer, reducer) {
+    //     this.name = name;
+    //     this.imageUrl = imageUrl;
+    //     this.leisureAvg = leisureAvg;
+    //     this.moralsAvg = moralsAvg;
+    //     this.interestsAvg = interestsAvg;
+    //     this.superficialityAvg = superficialityAvg;
+    //     this.multiplyer = multiplyer;
+    //     this.reducer = reducer;
+    // }
     var finalMatchScore;
     var categoryArray = ["leisure", "morals", "interests", "superficiality"];
+    var userDataArray = [];
     var dataArray = [];
+    var matchScoreArray = [];
     var insertImage;
     $.ajax({
             url: "/api/friends",
@@ -83,20 +94,100 @@
                             categorySum += parseInt(data[i].surveyResults[j].raw[k]);
                         }
                         dataArray[0][i].surveyResults[j].average = (categorySum / m).toFixed(2);
+                        if (i === n - 1) {
+                            userDataArray.push(dataArray[0][i].surveyResults[j].average);
+                        }
                         categorySumArray.push(categorySum);
 
                     }
                     console.log(categorySumArray);
                 }
+                setTimeout(getMatchScores, 1000);
                 console.log(dataArray);
+
             }
         });
 
-    //   var insertImage = friends[0].imageUrl;
-    // console.log(insertImage); 
-    // $("#yourMatch").attr("src", insertImage); 
-    // var trait = friends[0].averageTraits(); 
-    // console.log(trait);
+    function getMatchScores() {
+
+        var n = dataArray[0].length - 1;
+        var tempCompareArray = [];
+        console.log(n);
+        userDataObj = dataArray[0][n];
+        console.log(userDataObj);
+        var tempUserAverage;
+
+        for (var i = 0; i < n; i++) {
+            for (var j = 0; j < 4; j++) {
+                var maximizer = 1;
+                var minimizer = 1;
+                switch (true) {
+                    case (userDataObj.multiplyer === "leisure" && j === 0):
+                        maximizer = 2;
+                        break;
+                    case (userDataObj.multiplyer === "morals" && j === 1):
+                        maximizer = 2;
+                        console.log("moralsfire");
+                        break;
+                    case (userDataObj.multiplyer === "interests" && j === 2):
+                        maximizer = 2;
+                        console.log("interestsfire");
+                        break;
+                    case (userDataObj.multiplyer === "superficiality" && j === 3):
+                        maximizer = 2;
+                        console.log("superficialityfire");
+                        break;
+                    default:
+                        console.log("missedit")
+                        break;
+                }
+                switch (true) {
+                    case (userDataObj.reducer === "leisure" && j === 0):
+                        minimizer = 0.5;
+                        console.log("leisurefire");
+                        break;
+                    case (userDataObj.reducer === "morals" && j === 1):
+                        minimizer = 0.5;
+                        console.log("moralsfire");
+                        break;
+                    case (userDataObj.reducer === "interests" && j === 2):
+                        minimizer = 0.5;
+                        console.log("interestsfire");
+                        break;
+                    case (userDataObj.reducer === "superficiality" && j === 3):
+                        minimizer = 0.5;
+                        console.log("superficialityfire");
+                        break;
+                    default:
+                        console.log("missedit");
+                        break;
+                }
+                var num = minimizer * maximizer * (Math.abs((dataArray[0][i].surveyResults[j].average) - (userDataObj.surveyResults[j].average)));
+
+                var twoNum = num.toFixed(2);
+                tempCompareArray.push(twoNum);
+            }
+            console.log(tempCompareArray);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+    }
     </script>
 </body>
 
