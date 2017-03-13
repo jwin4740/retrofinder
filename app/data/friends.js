@@ -24,11 +24,7 @@ var friends = [{
         raw: [3, 4, 2],
         average: 0,
         type: "interests"
-    }, {
-        raw: [3, 4, 2],
-        average: 0,
-        type: "random"
-    }, {
+    },  {
         raw: [3, 4, 2],
         average: 0,
         type: "superficiality"
@@ -55,10 +51,6 @@ var friends = [{
         raw: [3, 4, 2],
         average: 0,
         type: "interests"
-    }, {
-        raw: [3, 4, 2],
-        average: 0,
-        type: "random"
     }, {
         raw: [3, 4, 2],
         average: 0,
