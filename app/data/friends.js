@@ -10,12 +10,14 @@ var friends = [
     friendName: "James",
     friendEmail: "james@example.com",
     friendUserName: "jwin474089",
-    phoneNumber: "630-715-7982"
+    phoneNumber: "630-715-7982",
+    imageUrl: "http://bestfloridatalents.com/wp-content/uploads/2010/07/RJtieheadshot.jpg"                             
   }, {
     friendName: "Steve",
     friendEmail: "steve@example.com",
     friendUserName: "scubasteve",
-    phoneNumber: "630-968-0689"
+    phoneNumber: "630-968-0689",
+    imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
   }
 ];
 

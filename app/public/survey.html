@@ -148,11 +148,11 @@
         <br>
         <br>
         <!-- Submit Button -->
-        <button type="submit" class="submitSurvey btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
-        </button>
+        <button class="submitSurvey">Submit</button>
         <hr>
         <footer class="footer">
             <div class="container">
+                <p><a href="/results">Submit2</a></p>
                 <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
             </div>
         </footer>
@@ -176,7 +176,6 @@
         </div>
     </div>
     <script type="text/javascript">
-
     var nameArray = [];
     $(".submit").on("click", function(event) {
         event.preventDefault();
@@ -216,11 +215,12 @@
     });
 
     $(".submitSurvey").on("click", function(event) {
-        event.preventDefault();
+        var url = "/results";
+        $(location).attr('href', url);
         for (var i = 1; i < 11; i++) {
             var num = $("#q" + i).val();
-           nameArray.push(num);
-           console.log(nameArray);
+            nameArray.push(num);
+            console.log(nameArray);
         }
 
     });
