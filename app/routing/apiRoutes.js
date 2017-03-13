@@ -6,6 +6,8 @@
 
 var tableData = require("../data/tableData");
 var waitListData = require("../data/waitinglistData");
+var matchesData = require("../data/matches.js");
+var friendsData = require("../data/friends.js");
 
 
 // ===============================================================================
@@ -29,6 +31,10 @@ module.exports = function(app) {
     console.log(waitListData);
   });
 
+  app.get("/api/friends", function(req, res) {
+    res.json(friendsData);
+    console.log(friendsData);
+  });
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.
   // In each of the below cases, when a user submits form data (a JSON object)
@@ -48,6 +54,17 @@ module.exports = function(app) {
       waitListData.push(req.body);
       res.json(false);
     }
+
+  });
+
+    app.post("/api/friends", function(req, res) {
+    // Note the code here. Our "server" will respond to requests and let users know if they have a table or not.
+    // It will do this by sending out the value "true" have a table
+
+      friendsData.push(req.body);
+      res.json(false);
+    
+  
   });
 
   // ---------------------------------------------------------------------------
