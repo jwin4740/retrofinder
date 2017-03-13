@@ -6,9 +6,8 @@
     <title>FriendFinder</title>
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -149,7 +148,7 @@
         <br>
         <br>
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+        <button type="submit" class="submitSurvey btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
         </button>
         <hr>
         <footer class="footer">
@@ -177,10 +176,12 @@
         </div>
     </div>
     <script type="text/javascript">
-  $(".submit").on("click", function(event) {
-      event.preventDefault();
-      // Here we grab the form elements
-      var newFriend = {
+
+    var nameArray = [];
+    $(".submit").on("click", function(event) {
+        event.preventDefault();
+        // Here we grab the form elements
+        var newFriend = {
             friendName: $("#friend-name").val().trim(),
             friendEmail: $("#friend-email").val().trim(),
             friendUserName: $("#friend-user").val().trim(),
@@ -188,32 +189,41 @@
         };
 
         console.log(newFriend);
-  
-      // This line is the magic. It"s very similar to the standard ajax function we used.
-      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-      // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-      // depending on if a tables is available or not.
-         
 
-    // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
-    $.ajax({
-            url: "/api/friends",
-            data: newFriend,
-            method: "POST"
-        })
-        .done(function(data) {
-      // $.post("/api/friends", newFriend,
-      //   function(data) {
-            console.log(data);
-          
-          // Clear the form when submitting
-          $("#reserve-name").val("");
-          $("#reserve-phone").val("");
-          $("#reserve-email").val("");
-          $("#reserve-unique-id").val("");
-        });
+        // This line is the magic. It"s very similar to the standard ajax function we used.
+        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+        // depending on if a tables is available or not.
+
+
+        // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+        $.ajax({
+                url: "/api/friends",
+                data: newFriend,
+                method: "POST"
+            })
+            .done(function(data) {
+                // $.post("/api/friends", newFriend,
+                //   function(data) {
+                console.log(data[0]);
+
+                // Clear the form when submitting
+                $("#reserve-name").val("");
+                $("#reserve-phone").val("");
+                $("#reserve-email").val("");
+                $("#reserve-unique-id").val("");
+            });
     });
 
+    $(".submitSurvey").on("click", function(event) {
+        event.preventDefault();
+        for (var i = 1; i < 11; i++) {
+            var num = $("#q" + i).val();
+           nameArray.push(num);
+           console.log(nameArray);
+        }
+
+    });
     </script>
 </body>
 
