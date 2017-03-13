@@ -71,22 +71,3 @@ var friends = [{
 
 // Note how we export the array. This makes it accessible to other files using require.
 module.exports = friends;
-getAverages();
-
-function getAverages() {
-    var categorySumArray = [];
-    var n = friends.length;
-    var m = 3; // raw friends length
-
-    var categorySumArray = [];
-    for (var i = 0; i < n; i++) {
-        for (var j = 0; j < 5; j++) {
-            var categorySum = 0;
-            for (var k = 0; k < 1; k++) {
-                categorySum += friends[i].surveyResults[j].raw[k];
-            }
-            categorySumArray.push(categorySum);
-        }
-        console.log(categorySumArray)
-    }
-}
