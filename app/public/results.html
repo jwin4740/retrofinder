@@ -80,7 +80,7 @@
                     for (var j = 0; j < 4; j++) {
                         var categorySum = 0;
                         for (var k = 0; k < m; k++) {
-                            categorySum += data[i].surveyResults[j].raw[k];
+                            categorySum += parseInt(data[i].surveyResults[j].raw[k]);
                         }
                         dataArray[0][i].surveyResults[j].average = (categorySum / m).toFixed(2);
                         categorySumArray.push(categorySum);
