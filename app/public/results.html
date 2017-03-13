@@ -40,8 +40,8 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">Your match</h4>
                     </div>
-                    <div class="panel-body" id="yourMatch">
-                    <img class="matchResult" alt="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200">
+                    <div class="panel-body">
+                    <img class="matchResult" id="yourMatch" alt="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200">
                     <h3> name </h3>
                     <p> about me information and data that describes why the match is a good match</p>
                     </div>
@@ -65,7 +65,10 @@
 
                 insertImage = data[1].imageUrl;
                 console.log(insertImage);
-                $("#yourImage").attr("src", insertImage);
+                $("#yourMatch").attr("src", insertImage);
+
+                var trait = data[0].surveyResults.leisure;
+                console.log(trait[2]);
             });
 
 

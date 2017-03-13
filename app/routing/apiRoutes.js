@@ -6,7 +6,7 @@
 
 // var tableData = require("../data/tableData");
 // var waitListData = require("../data/waitinglistData");
-var matchesData = require("../data/matches.js");
+
 var friendsData = require("../data/friends.js");
 
 
