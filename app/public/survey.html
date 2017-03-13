@@ -55,7 +55,7 @@
                             </select>
                             <br>
                             <br>
-                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                            <!--   <button type="submit" class="btn btn-primary takeQuiz">Submit</button> -->
                         </form>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
         </select>
         <h3><strong>Question 1</strong></h3>
         <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
+        <select data-placeholder="" class="chosen-select" data-cat="morals" id="q1">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -86,7 +86,7 @@
         </select>
         <h3><strong>Question 2</strong></h3>
         <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
-        <select data-placeholder="" class="chosen-select" id="q2">
+        <select data-placeholder="" class="chosen-select" data-cat="superficiality" id="q2">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -101,7 +101,7 @@
         </select>
         <h3><strong>Question 3</strong></h3>
         <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-        <select data-placeholder="" class="chosen-select" id="q3">
+        <select data-placeholder="" class="chosen-select" data-cat="interests" id="q3">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -116,7 +116,7 @@
         </select>
         <h3><strong>Question 4</strong></h3>
         <h4>You rarely do something just out of sheer curiosity.</h4>
-        <select data-placeholder="" class="chosen-select" id="q4">
+        <select data-placeholder="" class="chosen-select" data-cat="leisure" id="q4">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -131,7 +131,7 @@
         </select>
         <h3><strong>Question 5</strong></h3>
         <h4>People can rarely upset you.</h4>
-        <select data-placeholder="" class="chosen-select" id="q5">
+        <select data-placeholder="" class="chosen-select" data-cat="superficiality" id="q5">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -146,7 +146,7 @@
         </select>
         <h3><strong>Question 6</strong></h3>
         <h4>It is often difficult for you to relate to other people’s feelings.</h4>
-        <select data-placeholder="" class="chosen-select" id="q6">
+        <select data-placeholder="" class="chosen-select" data-cat="morals" id="q6">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -161,7 +161,7 @@
         </select>
         <h3><strong>Question 7</strong></h3>
         <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
-        <select data-placeholder="" class="chosen-select" id="q7">
+        <select data-placeholder="" class="chosen-select" data-cat="interests" id="q7">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -176,7 +176,7 @@
         </select>
         <h3><strong>Question 8</strong></h3>
         <h4>You rarely get carried away by fantasies and ideas.</h4>
-        <select data-placeholder="" class="chosen-select" id="q8">
+        <select data-placeholder="" class="chosen-select" data-cat="leisure" id="q8">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -191,7 +191,7 @@
         </select>
         <h3><strong>Question 9</strong></h3>
         <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
-        <select data-placeholder="" class="chosen-select" id="q9">
+        <select data-placeholder="" class="chosen-select" data-cat="morals" id="q9">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -206,7 +206,7 @@
         </select>
         <h3><strong>Question 10</strong></h3>
         <h4>You feel more energetic after spending time with a group of people.</h4>
-        <select data-placeholder="" class="chosen-select" id="q10">
+        <select data-placeholder="" class="chosen-select" data-cat="leisure" id="q10">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -221,7 +221,7 @@
         </select>
         <h3><strong>Question 11</strong></h3>
         <h4>You feel more energetic after spending time with a group of people.</h4>
-        <select data-placeholder="" class="chosen-select" id="q11">
+        <select data-placeholder="" class="chosen-select" data-cat="superficiality" id="q11">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -236,7 +236,7 @@
         </select>
         <h3><strong>Question 12</strong></h3>
         <h4>You feel more energetic after spending time with a group of people.</h4>
-        <select data-placeholder="" class="chosen-select" id="q12">
+        <select data-placeholder="" class="chosen-select" data-cat="interests" id="q12">
             <option value=""></option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -299,9 +299,46 @@
     </div>
     <script type="text/javascript">
     var nameArray = [];
-    $(".submit").on("click", function(event) {
+
+
+    // Here we grab the form elements
+
+
+    // This line is the magic. It"s very similar to the standard ajax function we used.
+    // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+    // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+    // depending on if a tables is available or not.
+
+
+    // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+    $(".submitSurvey").on("click", function(event) {
         event.preventDefault();
-        // Here we grab the form elements
+        var w = [];
+        var x = [];
+        var y = [];
+        var z = [];
+
+        var nameArray = [];
+        for (var i = 1; i < 13; i++) {
+            var dataCat = $("#q" + i).attr("data-cat");
+            var tempVal = $("#q" + i).val();
+            tempValNum = parseInt(tempVal);
+            switch (dataCat) {
+                case "leisure":
+                    w.push(tempValNum);
+                    break;
+                case "morals":
+                    x.push(tempValNum);
+                    break;
+                case "interests":
+                    y.push(tempValNum);
+                    break;
+                case "superficiality":
+                    z.push(tempValNum);
+                    break;
+            }
+        }
+
         var newFriend = {
             friendName: $("#friend-name").val().trim(),
             friendEmail: $("#friend-email").val().trim(),
@@ -309,48 +346,52 @@
             phoneNumber: $("#friend-number").val().trim(),
             imageUrl: $("#friend-image").val().trim(),
             shortBio: $("#friend-bio").val().trim(),
-            gender: $("#gender").val()
+            gender: $("#gender").val(),
+            surveyResults: [{
+                raw: w,
+                average: 0,
+                type: "leisure"
+            }, {
+                raw: x,
+                average: 0,
+                type: "morals"
+            }, {
+                raw: y,
+                average: 0,
+                type: "interests"
+            }, {
+                raw: z,
+                average: 0,
+                type: "superficiality"
+            }],
         };
+        setTimeout(postIt, 500);
 
-        console.log(newFriend);
+        function postIt() {
+            console.log(newFriend);
+            $.ajax({
+                    url: "/api/friends",
+                    data: newFriend,
+                    method: "POST"
+                })
+                .done(function(data) {
+                    // $.post("/api/friends", newFriend,
+                    //   function(data) {
+                    console.log(data[0]);
 
-        // This line is the magic. It"s very similar to the standard ajax function we used.
-        // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-        // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-        // depending on if a tables is available or not.
+                    // Clear the form when submitting
+                    $("#friend-name").val("");
+                    $("#friend-email").val("");
+                    $("#friend-user").val("");
+                    $("#friend-number").val("");
+                    $("#friend-image").val("");
+                    $("#friend-bio").val("");
+                    $("#gender").val("");
+                    // var url = "/results";
+                    // $(location).attr('href', url);
 
-
-        // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
-        $.ajax({
-                url: "/api/friends",
-                data: newFriend,
-                method: "POST"
-            })
-            .done(function(data) {
-                // $.post("/api/friends", newFriend,
-                //   function(data) {
-                console.log(data[0]);
-
-                // Clear the form when submitting
-                $("#friend-name").val("");
-                $("#friend-email").val("");
-                $("#friend-user").val("");
-                $("#friend-number").val("");
-                $("#friend-image").val("");
-                $("#friend-bio").val("");
-                $("#gender").val("");
-            });
-    });
-
-    $(".submitSurvey").on("click", function(event) {
-        var url = "/results";
-        $(location).attr('href', url);
-        for (var i = 1; i < 11; i++) {
-            var num = $("#q" + i).val();
-            nameArray.push(num);
-            console.log(nameArray);
+                });
         }
-
     });
     </script>
 </body>
