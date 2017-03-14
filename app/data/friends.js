@@ -18,6 +18,7 @@ var friends = [{
     interestsAverage: 6,
     superficialityAverage: 3,
     compatibilityScore: 0,
+    removalTag: "",
     profile: "asdfasdfasdfasdfadsf",
     imageUrl: "http://bestfloridatalents.com/wp-content/uploads/2010/07/RJtieheadshot.jpg"
 
@@ -34,6 +35,7 @@ var friends = [{
     interestsAverage: 6,
     superficialityAverage: 8,
     compatibilityScore: 0,
+    removalTag: "",
     profile: "asfasfafsfadff",
     imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
 
@@ -50,6 +52,7 @@ var friends = [{
     interestsAverage: 5,
     superficialityAverage: 5,
     compatibilityScore: 0,
+    removalTag: "",
     profile: "asfasfafsfadff",
     imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
 
@@ -66,6 +69,7 @@ var friends = [{
     interestsAverage: 6,
     superficialityAverage: 2,
     compatibilityScore: 0,
+    removalTag: "",
     profile: "asfasfafsfadff",
     imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
 
@@ -82,6 +86,7 @@ var friends = [{
     interestsAverage: 6,
     superficialityAverage: 7,
     compatibilityScore: 0,
+    removalTag: "",
     profile: "asfasfafsfadff",
     imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
 
@@ -98,6 +103,7 @@ var friends = [{
     interestsAverage: 8,
     superficialityAverage: 4,
     compatibilityScore: 0,
+    removalTag: "",
     profile: "asfasfafsfadff",
     imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
 
@@ -114,6 +120,7 @@ var friends = [{
     interestsAverage: 3,
     superficialityAverage: 1,
     compatibilityScore: 0,
+    removalTag: "",
     profile: "asfasfafsfadff",
     imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
 
@@ -130,6 +137,7 @@ var friends = [{
     interestsAverage: 3,
     superficialityAverage: 9,
     compatibilityScore: 0,
+    removalTag: "",
     profile: "asfasfafsfadff",
     imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
 

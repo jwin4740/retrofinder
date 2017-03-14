@@ -167,27 +167,50 @@
 
 
 
-// will toss out people who meet certain requirements
-function tossOut () {
-    var userGender = userDataObj.gender;
-    var ageRange = userDataObj.ageRange;
-     var n = dataArray.length;
-     for (var i = 0; i < n; i++)
-     {
-        if (dataArray[i].gender === userGender)
-        {
-            dataArray[i].splice(i, 1);
+    // will toss out people who meet certain requirements
+    function tossOut() {
+        var userGender = userDataObj.gender;
+        var userAgeRange = userDataObj.ageRange;
+        var n = dataArray.length;
+        for (var i = 0; i < n; i++) {
+            if (dataArray[i].gender === userGender) {
+                dataArray[i].removalTag = true;
+            }
+            switch (userAgeRange) {
+                case "all":
+                    break;
+                case "younger":
+                    if (dataArray[i].ageRange === "mid" || dataArray[i].ageRange === "older") {
+                        dataArray[i].removalTag = true;
+                    }
+                    break;
+                case "mid":
+                    if (dataArray[i].ageRange === "younger" || dataArray[i].ageRange === "older") {
+                        dataArray[i].removalTag = true;
+                    }
+                    break;
+                case "older":
+                    if (dataArray[i].ageRange === "younger" || dataArray[i].ageRange === "mid") {
+                        dataArray[i].removalTag = true;
+                    }
+                    break;
+
+            }
         }
-     }
+        for (var i = 0; i < n; i++) {
+            if (dataArray[i].removalTag != true) {
+                narrowedArray.push(dataArray[i]);
+            }
+        }
+        setTimeout(console.log(narrowedArray), 3000);
+    }
 
-}
-  
 
 
 
 
 
-  setTimeout(getCompatibilityScores, 1500);
+    // setTimeout(getCompatibilityScores, 1500);
     function getCompatibilityScores() {
         var n = dataArray.length;
         for (var i = 0; i < n; i++) {
