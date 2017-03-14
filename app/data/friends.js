@@ -7,7 +7,7 @@
 
 var friends = [{
     friendName: "James",
-    ageRange: 0,
+    ageRange: "younger",
     gender: "male",
     friendEmail: "james@example.com",
     friendUserName: "jwin474089",
@@ -23,7 +23,7 @@ var friends = [{
 
 }, {
     friendName: "Steve",
-    ageRange: 0,
+    ageRange: "mid",
     gender: "male",
     friendEmail: "steve@example.com",
     friendUserName: "scubasteve",
@@ -39,7 +39,7 @@ var friends = [{
 
 }, {
     friendName: "Ryan",
-    ageRange: 0,
+    ageRange: "older",
     gender: "male",
     friendEmail: "steve@example.com",
     friendUserName: "scubasteve",
@@ -55,7 +55,7 @@ var friends = [{
 
 }, {
     friendName: "Fred",
-    ageRange: 0,
+    ageRange: "younger",
     gender: "male",
     friendEmail: "steve@example.com",
     friendUserName: "scubasteve",
@@ -71,7 +71,7 @@ var friends = [{
 
 }, {
     friendName: "Sarah",
-    ageRange: 0,
+    ageRange: "older",
     gender: "female",
     friendEmail: "steve@example.com",
     friendUserName: "scubasteve",
@@ -87,7 +87,7 @@ var friends = [{
 
 }, {
     friendName: "Angelica",
-    ageRange: 0,
+    ageRange: "mid",
     gender: "female",
     friendEmail: "steve@example.com",
     friendUserName: "scubasteve",
@@ -103,7 +103,7 @@ var friends = [{
 
 }, {
     friendName: "Eliza",
-    ageRange: 0,
+    ageRange: "mid",
     gender: "female",
     friendEmail: "steve@example.com",
     friendUserName: "scubasteve",
@@ -119,7 +119,7 @@ var friends = [{
 
 }, {
     friendName: "Peggy",
-    ageRange: 0,
+    ageRange: "younger",
     gender: "female",
     friendEmail: "steve@example.com",
     friendUserName: "scubasteve",

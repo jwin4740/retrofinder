@@ -346,7 +346,7 @@
         }
         // constructs user profile object based on their inputs and answers
         var newFriend = {
-            agePreference: $("#ageRange").val().trim(),
+            ageRange: $("#ageRange").val().trim(),
             friendName: $("#friend-name").val().trim(),
             friendEmail: $("#friend-email").val().trim(),
             friendUserName: $("#friend-user").val().trim(),
@@ -356,6 +356,7 @@
             gender: $("#gender").val(),
             multiplyer: $("#multiplyer").val(),
             reducer: $("#reducer").val(),
+            compatibilityScore: 0,
             leisureAverage: lAvg,
             moralsAverage: mAvg,
             interestsAverage: iAvg,

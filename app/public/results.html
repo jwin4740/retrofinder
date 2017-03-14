@@ -67,178 +67,136 @@
     // }
 
     // var categoryArray = ["leisure", "morals", "interests", "superficiality"];
- 
+    // for (var i = 0; i < n; i++) {
+    //       for (var j = 0; j < 4; j++) {
+    //           var maximizer = 1;
+    //           var minimizer = 1;
+    //           switch (true) {
+    //               case (userDataObj.multiplyer === "leisure" && j === 0):
+    //                   maximizer = 2;
+    //                   break;
+    //               case (userDataObj.multiplyer === "morals" && j === 1):
+    //                   maximizer = 2;
+    //                   console.log("moralsfire");
+    //                   break;
+    //               case (userDataObj.multiplyer === "interests" && j === 2):
+    //                   maximizer = 2;
+    //                   console.log("interestsfire");
+    //                   break;
+    //               case (userDataObj.multiplyer === "superficiality" && j === 3):
+    //                   maximizer = 2;
+    //                   console.log("superficialityfire");
+    //                   break;
+    //               default:
+    //                   console.log("missedit")
+    //                   break;
+    //           }
+    //           switch (true) {
+    //               case (userDataObj.reducer === "leisure" && j === 0):
+    //                   minimizer = 0.5;
+    //                   console.log("leisurefire");
+    //                   break;
+    //               case (userDataObj.reducer === "morals" && j === 1):
+    //                   minimizer = 0.5;
+    //                   console.log("moralsfire");
+    //                   break;
+    //               case (userDataObj.reducer === "interests" && j === 2):
+    //                   minimizer = 0.5;
+    //                   console.log("interestsfire");
+    //                   break;
+    //               case (userDataObj.reducer === "superficiality" && j === 3):
+    //                   minimizer = 0.5;
+    //                   console.log("superficialityfire");
+    //                   break;
+    //               default:
+    //                   console.log("missedit");
+    //                   break;
+    //           }
+    //           var num = (Math.abs((dataArray[0][i].surveyResults[j].average) - (userDataObj.surveyResults[j].average)));
 
-    var userDataObj;
+    //           var twoNum = num.toFixed(2);
+    //           var scaled = 0;
+    //           switch (true) {
+    //               case (twoNum < 1):
+    //                   scaled = 10 * minimizer * maximizer;
+    //                   break;
+    //               case (twoNum >= 1 && twoNum < 2):
+    //                   scaled = 8 * minimizer * maximizer;
+    //                   break;
+    //               case (twoNum >= 2 && twoNum < 3):
+    //                   scaled = 6 * minimizer * maximizer;
+    //                   break;
+    //               case (twoNum >= 3 && twoNum < 4):
+    //                   scaled = 5 * minimizer * maximizer;
+    //                   break;
+    //               case (twoNum >= 4 && twoNum < 5):
+    //                   scaled = 4 * minimizer * maximizer;
+    //                   break;
+    //               case (twoNum >= 5 && twoNum < 6):
+    //                   scaled = 2 * minimizer * maximizer;
+    //                   break;
+    //               case (twoNum >= 6):
+    //                   scaled = 0;
+    //                   break;
+    //           }
+
+    var dataArray = [];
+    var userDataObj = "";
+    var narrowedArray = [];
     $.ajax({
             url: "/api/friends",
             method: "GET"
         })
         .done(function(data) {
-            
-            dataArray.push(data);
+            var n = data.length;
             extractUserProfile();
-          
+
             function extractUserProfile() {
-                for (var i = 0; i < n; i ++){
-
+                for (var i = 0; i < n; i++) {
+                    if (i === n - 1) {
+                        userDataObj = data[i];
+                    } else {
+                        dataArray.push(data[i]);
+                    }
                 }
-            
-
+                setTimeout(console.log(userDataObj), 1500);
+                setTimeout(tossOut, 1500);
             }
         });
 
-    function getMatchScores() {
 
-        var n = dataArray[0].length - 1;
 
-        console.log(n);
-        userDataObj = dataArray[0][n];
-        console.log(userDataObj);
-        var tempUserAverage;
 
-        for (var i = 0; i < n; i++) {
-            for (var j = 0; j < 4; j++) {
-                var maximizer = 1;
-                var minimizer = 1;
-                switch (true) {
-                    case (userDataObj.multiplyer === "leisure" && j === 0):
-                        maximizer = 2;
-                        break;
-                    case (userDataObj.multiplyer === "morals" && j === 1):
-                        maximizer = 2;
-                        console.log("moralsfire");
-                        break;
-                    case (userDataObj.multiplyer === "interests" && j === 2):
-                        maximizer = 2;
-                        console.log("interestsfire");
-                        break;
-                    case (userDataObj.multiplyer === "superficiality" && j === 3):
-                        maximizer = 2;
-                        console.log("superficialityfire");
-                        break;
-                    default:
-                        console.log("missedit")
-                        break;
-                }
-                switch (true) {
-                    case (userDataObj.reducer === "leisure" && j === 0):
-                        minimizer = 0.5;
-                        console.log("leisurefire");
-                        break;
-                    case (userDataObj.reducer === "morals" && j === 1):
-                        minimizer = 0.5;
-                        console.log("moralsfire");
-                        break;
-                    case (userDataObj.reducer === "interests" && j === 2):
-                        minimizer = 0.5;
-                        console.log("interestsfire");
-                        break;
-                    case (userDataObj.reducer === "superficiality" && j === 3):
-                        minimizer = 0.5;
-                        console.log("superficialityfire");
-                        break;
-                    default:
-                        console.log("missedit");
-                        break;
-                }
-                var num = (Math.abs((dataArray[0][i].surveyResults[j].average) - (userDataObj.surveyResults[j].average)));
-
-                var twoNum = num.toFixed(2);
-                var scaled = 0;
-                switch (true) {
-                    case (twoNum < 1):
-                        scaled = 10 * minimizer * maximizer;
-                        break;
-                    case (twoNum >= 1 && twoNum < 2):
-                        scaled = 8 * minimizer * maximizer;
-                        break;
-                    case (twoNum >= 2 && twoNum < 3):
-                        scaled = 6 * minimizer * maximizer;
-                        break;
-                    case (twoNum >= 3 && twoNum < 4):
-                        scaled = 5 * minimizer * maximizer;
-                        break;
-                    case (twoNum >= 4 && twoNum < 5):
-                        scaled = 4 * minimizer * maximizer;
-                        break;
-                    case (twoNum >= 5 && twoNum < 6):
-                        scaled = 2 * minimizer * maximizer;
-                        break;
-                    case (twoNum >= 6):
-                        scaled = 0;
-                        break;
-                }
-
-                tempCompareArray.push(scaled);
-            }
-            console.log(tempCompareArray);
+// will toss out people who meet certain requirements
+function tossOut () {
+    var userGender = userDataObj.gender;
+    var ageRange = userDataObj.ageRange;
+     var n = dataArray.length;
+     for (var i = 0; i < n; i++)
+     {
+        if (dataArray[i].gender === userGender)
+        {
+            dataArray[i].splice(i, 1);
         }
-        setTimeout(parseMatchScores, 2000);
-    }
+     }
 
-    function parseMatchScores() {
-        var n = tempCompareArray.length;
-        var partial = 0;
-        var counter = 0;
+}
+  
+
+
+
+
+
+  setTimeout(getCompatibilityScores, 1500);
+    function getCompatibilityScores() {
+        var n = dataArray.length;
         for (var i = 0; i < n; i++) {
-            partial += tempCompareArray[i];
-            counter++;
-            if (counter === 4) {
-                parsedArray.push(partial);
-                partial = 0;
-                counter = 0;
-            }
-
+            dataArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.leisureAverage) - dataArray[i].leisureAverage);
+            dataArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.moralsAverage) - dataArray[i].moralsAverage);
+            dataArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.interestsAverage) - dataArray[i].interestsAverage);
+            dataArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.superficialityAverage) - dataArray[i].superficialityAverage);
         }
-        setTimeout(function() {
-            console.log(parsedArray);
-            findMax();
-        }, 2000);
-    }
-
-
-    function findMax() {
-        var n = parsedArray.length;
-        var currentVal;
-        var spliceCounter = 0;
-        var tempCompareArray = [];
-        var splicedArray = [];
-        var tempArray = [];
-
-        do {
-            tempCompareArray = [];
-            tempArray = parsedArray;
-            var splicedVal = tempArray[spliceCounter];
-             splicedArray = tempArray.splice(spliceCounter, 1);
-            compareIt(splicedVal);
-
-            function compareIt(val) {
-                var l = tempCompareArray.length;
-                for (var k = 0; k < l; k++) {
-                    if (splicedVal >= splicedArray[k]) {
-                        tempCompareArray.push(true);
-                    } else {
-                        tempCompareArray.push(false);
-                    }
-                }
-                for (var j = 0; j < l; j++) {
-                    if (tempCompareArray[j] === false) {
-                        boolArray.push(false);
-                        break;
-                    }
-                    if (tempCompareArray[l - 1] === true) {
-                        boolArray.push(true);
-                        break;
-                    }
-                }
-            }
-            spliceCounter++;
-
-        } while (spliceCounter < n);
-        setTimeout(function() {
-            console.log(boolArray);
-        }, 2500);
+        setTimeout(console.log(dataArray), 1500);
     }
     </script>
 </body>
