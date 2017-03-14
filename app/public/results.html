@@ -65,45 +65,25 @@
     //     this.multiplyer = multiplyer;
     //     this.reducer = reducer;
     // }
-    var finalMatchScore;
-    var categoryArray = ["leisure", "morals", "interests", "superficiality"];
-    var userDataArray = [];
-    var dataArray = [];
-    var matchScoreArray = [];
-    var insertImage;
+
+    // var categoryArray = ["leisure", "morals", "interests", "superficiality"];
+ 
+
+    var userDataObj;
     $.ajax({
             url: "/api/friends",
             method: "GET"
         })
         .done(function(data) {
-            insertImage = data[1].imageUrl;
-            console.log(insertImage);
-            $("#yourMatch").attr("src", insertImage);
+            
             dataArray.push(data);
-            getAverages();
-            // calculates the average scores of a user in each category and updates the dataArray accordingly
-            function getAverages() {
-                var categorySumArray = [];
-                var n = data.length;
-                var m = 3; // raw data length
-                var categorySumArray = [];
-                for (var i = 0; i < n; i++) {
-                    for (var j = 0; j < 4; j++) {
-                        var categorySum = 0;
-                        for (var k = 0; k < m; k++) {
-                            categorySum += parseInt(data[i].surveyResults[j].raw[k]);
-                        }
-                        dataArray[0][i].surveyResults[j].average = (categorySum / m).toFixed(2);
-                        if (i === n - 1) {
-                            userDataArray.push(dataArray[0][i].surveyResults[j].average);
-                        }
-                        categorySumArray.push(categorySum);
+            extractUserProfile();
+          
+            function extractUserProfile() {
+                for (var i = 0; i < n; i ++){
 
-                    }
-                    console.log(categorySumArray);
                 }
-                setTimeout(getMatchScores, 1000);
-                console.log(dataArray);
+            
 
             }
         });
@@ -111,7 +91,7 @@
     function getMatchScores() {
 
         var n = dataArray[0].length - 1;
-        var tempCompareArray = [];
+
         console.log(n);
         userDataObj = dataArray[0][n];
         console.log(userDataObj);
@@ -162,31 +142,103 @@
                         console.log("missedit");
                         break;
                 }
-                var num = minimizer * maximizer * (Math.abs((dataArray[0][i].surveyResults[j].average) - (userDataObj.surveyResults[j].average)));
+                var num = (Math.abs((dataArray[0][i].surveyResults[j].average) - (userDataObj.surveyResults[j].average)));
 
                 var twoNum = num.toFixed(2);
-                tempCompareArray.push(twoNum);
+                var scaled = 0;
+                switch (true) {
+                    case (twoNum < 1):
+                        scaled = 10 * minimizer * maximizer;
+                        break;
+                    case (twoNum >= 1 && twoNum < 2):
+                        scaled = 8 * minimizer * maximizer;
+                        break;
+                    case (twoNum >= 2 && twoNum < 3):
+                        scaled = 6 * minimizer * maximizer;
+                        break;
+                    case (twoNum >= 3 && twoNum < 4):
+                        scaled = 5 * minimizer * maximizer;
+                        break;
+                    case (twoNum >= 4 && twoNum < 5):
+                        scaled = 4 * minimizer * maximizer;
+                        break;
+                    case (twoNum >= 5 && twoNum < 6):
+                        scaled = 2 * minimizer * maximizer;
+                        break;
+                    case (twoNum >= 6):
+                        scaled = 0;
+                        break;
+                }
+
+                tempCompareArray.push(scaled);
             }
             console.log(tempCompareArray);
+        }
+        setTimeout(parseMatchScores, 2000);
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    function parseMatchScores() {
+        var n = tempCompareArray.length;
+        var partial = 0;
+        var counter = 0;
+        for (var i = 0; i < n; i++) {
+            partial += tempCompareArray[i];
+            counter++;
+            if (counter === 4) {
+                parsedArray.push(partial);
+                partial = 0;
+                counter = 0;
+            }
 
         }
+        setTimeout(function() {
+            console.log(parsedArray);
+            findMax();
+        }, 2000);
+    }
+
+
+    function findMax() {
+        var n = parsedArray.length;
+        var currentVal;
+        var spliceCounter = 0;
+        var tempCompareArray = [];
+        var splicedArray = [];
+        var tempArray = [];
+
+        do {
+            tempCompareArray = [];
+            tempArray = parsedArray;
+            var splicedVal = tempArray[spliceCounter];
+             splicedArray = tempArray.splice(spliceCounter, 1);
+            compareIt(splicedVal);
+
+            function compareIt(val) {
+                var l = tempCompareArray.length;
+                for (var k = 0; k < l; k++) {
+                    if (splicedVal >= splicedArray[k]) {
+                        tempCompareArray.push(true);
+                    } else {
+                        tempCompareArray.push(false);
+                    }
+                }
+                for (var j = 0; j < l; j++) {
+                    if (tempCompareArray[j] === false) {
+                        boolArray.push(false);
+                        break;
+                    }
+                    if (tempCompareArray[l - 1] === true) {
+                        boolArray.push(true);
+                        break;
+                    }
+                }
+            }
+            spliceCounter++;
+
+        } while (spliceCounter < n);
+        setTimeout(function() {
+            console.log(boolArray);
+        }, 2500);
     }
     </script>
 </body>

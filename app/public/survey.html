@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <h4>What is an acceptable age range for your match</h4>
+        <h4>What is an acceptable age range for your match?</h4>
         <select data-placeholder="" class="chosen-select" id="ageRange">
             <option value=""></option>
             <option value="younger">18 to 29</option>
@@ -70,7 +70,7 @@
             <option value="all"> no preference</option>
         </select>
         <h3><strong>Question 1</strong></h3>
-        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <h4>Most moral decisions are based on absolute truth.</h4>
         <select data-placeholder="" class="chosen-select" data-cat="morals" id="q1">
             <option value=""></option>
             <option value="1">1</option>
@@ -85,7 +85,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 2</strong></h3>
-        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <h4>Physical appearance is an extremely important factor in a relationship.</h4>
         <select data-placeholder="" class="chosen-select" data-cat="superficiality" id="q2">
             <option value=""></option>
             <option value="1">1</option>
@@ -100,7 +100,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 3</strong></h3>
-        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <h4>I tend to be more of a scientist than an artist.</h4>
         <select data-placeholder="" class="chosen-select" data-cat="interests" id="q3">
             <option value=""></option>
             <option value="1">1</option>
@@ -115,7 +115,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 4</strong></h3>
-        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <h4>I would rather go partying on a weekend than staying home with my significant other.</h4>
         <select data-placeholder="" class="chosen-select" data-cat="leisure" id="q4">
             <option value=""></option>
             <option value="1">1</option>
@@ -130,7 +130,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 5</strong></h3>
-        <h4>People can rarely upset you.</h4>
+        <h4>Think of the top 3  material things (not people or career related) that are most important to you. How disruptive would this be (10 is most disruptive)? </h4>
         <select data-placeholder="" class="chosen-select" data-cat="superficiality" id="q5">
             <option value=""></option>
             <option value="1">1</option>
@@ -145,7 +145,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 6</strong></h3>
-        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <h4>Fidelity, honesty, and loyalty are very important in a relationship.</h4>
         <select data-placeholder="" class="chosen-select" data-cat="morals" id="q6">
             <option value=""></option>
             <option value="1">1</option>
@@ -160,7 +160,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 7</strong></h3>
-        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <h4>When trying new activities, I like some risk and uncertainty.</h4>
         <select data-placeholder="" class="chosen-select" data-cat="interests" id="q7">
             <option value=""></option>
             <option value="1">1</option>
@@ -175,7 +175,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 8</strong></h3>
-        <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <h4>I love a good television show/series.</h4>
         <select data-placeholder="" class="chosen-select" data-cat="leisure" id="q8">
             <option value=""></option>
             <option value="1">1</option>
@@ -190,7 +190,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 9</strong></h3>
-        <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+        <h4>How important is admitting your key mistakes to your partner?</h4>
         <select data-placeholder="" class="chosen-select" data-cat="morals" id="q9">
             <option value=""></option>
             <option value="1">1</option>
@@ -205,7 +205,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 10</strong></h3>
-        <h4>You feel more energetic after spending time with a group of people.</h4>
+        <h4>Spending free time outdoors is very important to me.</h4>
         <select data-placeholder="" class="chosen-select" data-cat="leisure" id="q10">
             <option value=""></option>
             <option value="1">1</option>
@@ -220,7 +220,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 11</strong></h3>
-        <h4>You feel more energetic after spending time with a group of people.</h4>
+        <h4>How much do you enjoy buying the latest technology and fashion?</h4>
         <select data-placeholder="" class="chosen-select" data-cat="superficiality" id="q11">
             <option value=""></option>
             <option value="1">1</option>
@@ -235,7 +235,7 @@
             <option value="10">10</option>
         </select>
         <h3><strong>Question 12</strong></h3>
-        <h4>You feel more energetic after spending time with a group of people.</h4>
+        <h4>You would rather have a small group of very close friends than a very large group of acquaintances. </h4>
         <select data-placeholder="" class="chosen-select" data-cat="interests" id="q12">
             <option value=""></option>
             <option value="1">1</option>
@@ -288,21 +288,24 @@
     // Here we grab the form elements
 
 
-    // This line is the magic. It"s very similar to the standard ajax function we used.
-    // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-    // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-    // depending on if a tables is available or not.
+
 
 
     // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
     $(".submitSurvey").on("click", function(event) {
         event.preventDefault();
+        var tempValNum;
+        var lAvg = 0;
+        var mAvg = 0;
+        var iAvg = 0;
+        var sAvg = 0;
         var w = [];
         var x = [];
         var y = [];
         var z = [];
 
         var nameArray = [];
+        // pushes the user's answers into four different arrays for teh different question categories
         for (var i = 1; i < 13; i++) {
             var dataCat = $("#q" + i).attr("data-cat");
             var tempVal = $("#q" + i).val();
@@ -321,9 +324,29 @@
                     z.push(tempValNum);
                     break;
             }
-        }
+            if (i === 12) {
+                for (var j = 0; j < 3; j++) {
+                    lAvg += w[j];
+                    mAvg += x[j];
+                    iAvg += y[j];
+                    sAvg += z[j];
+                    if (j === 2) {
+                        lAvg = lAvg / 3;
+                        mAvg = mAvg / 3;
+                        iAvg = iAvg / 3;
+                        sAvg = sAvg / 3;
+                        console.log(lAvg);
+                        console.log(mAvg);
+                        console.log(iAvg);
+                        console.log(sAvg);
+                    }
+                }
 
+            }
+        }
+        // constructs user profile object based on their inputs and answers
         var newFriend = {
+            agePreference: $("#ageRange").val().trim(),
             friendName: $("#friend-name").val().trim(),
             friendEmail: $("#friend-email").val().trim(),
             friendUserName: $("#friend-user").val().trim(),
@@ -333,25 +356,14 @@
             gender: $("#gender").val(),
             multiplyer: $("#multiplyer").val(),
             reducer: $("#reducer").val(),
-            surveyResults: [{
-                raw: w,
-                average: 0,
-                type: "leisure"
-            }, {
-                raw: x,
-                average: 0,
-                type: "morals"
-            }, {
-                raw: y,
-                average: 0,
-                type: "interests"
-            }, {
-                raw: z,
-                average: 0,
-                type: "superficiality"
-            }],
+            leisureAverage: lAvg,
+            moralsAverage: mAvg,
+            interestsAverage: iAvg,
+            superficialityAverage: sAvg
         };
-        setTimeout(postIt, 500);
+        console.log(newFriend);
+        setTimeout(postIt, 1000);
+
 
         function postIt() {
             console.log(newFriend);
