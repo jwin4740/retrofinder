@@ -1,147 +1,1369 @@
 // ===============================================================================
 // friends
 // Below data will hold all of the reserved tables.
-// Initially we just set it equal to a "dummy" customer.
-// But you could have it be an empty array as well.
+// Initially we jddst set it eqddal to a "dddmmy" cddstomer.
+// Bddt yodd coddld have it be an empty array as well.
 // ===============================================================================
 
 var friends = [{
     friendName: "James",
     ageRange: "younger",
     gender: "male",
-    friendEmail: "james@example.com",
-    friendUserName: "jwin474089",
-    phoneNumber: "630-715-7982",
-    shortBio: "",
     leisureAverage: 5,
     moralsAverage: 8,
     interestsAverage: 6,
     superficialityAverage: 3,
     compatibilityScore: 0,
     removalTag: "",
-    profile: "asdfasdfasdfasdfadsf",
-    imageUrl: "http://bestfloridatalents.com/wp-content/uploads/2010/07/RJtieheadshot.jpg"
+    imageUrl: "http://bestfloridatalents.com/wp-content/ddploads/2010/07/RJtieheadshot.jpg"
 
 }, {
     friendName: "Steve",
     ageRange: "mid",
     gender: "male",
-    friendEmail: "steve@example.com",
-    friendUserName: "scubasteve",
-    phoneNumber: "630-968-0689",
-    shortBio: "",
     leisureAverage: 8,
     moralsAverage: 3,
     interestsAverage: 6,
     superficialityAverage: 8,
     compatibilityScore: 0,
     removalTag: "",
-    profile: "asfasfafsfadff",
-    imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
+    imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/ddploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
 
 }, {
     friendName: "Ryan",
     ageRange: "older",
     gender: "male",
-    friendEmail: "steve@example.com",
-    friendUserName: "scubasteve",
-    phoneNumber: "630-968-0689",
-    shortBio: "",
     leisureAverage: 5,
     moralsAverage: 5,
     interestsAverage: 5,
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: "",
-    profile: "asfasfafsfadff",
-    imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
+    imageUrl: "https://s-media-cache-ak0.pinimg.com/736x/3d/84/e9/3d84e9cce3996721d39eada012cf704f.jpg"
 
 }, {
     friendName: "Fred",
     ageRange: "younger",
     gender: "male",
-    friendEmail: "steve@example.com",
-    friendUserName: "scubasteve",
-    phoneNumber: "630-968-0689",
-    shortBio: "",
     leisureAverage: 2,
     moralsAverage: 2,
     interestsAverage: 6,
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: "",
-    profile: "asfasfafsfadff",
-    imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
+    imageUrl: "https://www.teachforamerica.org/sites/default/files/styles/list_thumbnail/public/Elliot%20Sanchez%20Headshot.jpg?itok=4fb8-pa_"           
 
 }, {
     friendName: "Sarah",
     ageRange: "older",
     gender: "female",
-    friendEmail: "steve@example.com",
-    friendUserName: "scubasteve",
-    phoneNumber: "630-968-0689",
-    shortBio: "",
     leisureAverage: 4,
     moralsAverage: 2,
     interestsAverage: 6,
     superficialityAverage: 7,
     compatibilityScore: 0,
     removalTag: "",
-    profile: "asfasfafsfadff",
-    imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
+    imageUrl: ""
 
 }, {
     friendName: "Angelica",
     ageRange: "mid",
     gender: "female",
-    friendEmail: "steve@example.com",
-    friendUserName: "scubasteve",
-    phoneNumber: "630-968-0689",
-    shortBio: "",
     leisureAverage: 7,
     moralsAverage: 6,
     interestsAverage: 8,
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: "",
-    profile: "asfasfafsfadff",
-    imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
+    imageUrl: ""
 
 }, {
     friendName: "Eliza",
     ageRange: "mid",
     gender: "female",
-    friendEmail: "steve@example.com",
-    friendUserName: "scubasteve",
-    phoneNumber: "630-968-0689",
-    shortBio: "",
     leisureAverage: 6,
     moralsAverage: 3,
     interestsAverage: 3,
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: "",
-    profile: "asfasfafsfadff",
-    imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
+    imageUrl: ""
 
 }, {
     friendName: "Peggy",
     ageRange: "younger",
     gender: "female",
-    friendEmail: "steve@example.com",
-    friendUserName: "scubasteve",
-    phoneNumber: "630-968-0689",
-    shortBio: "",
     leisureAverage: 5,
     moralsAverage: 3,
     interestsAverage: 3,
     superficialityAverage: 9,
     compatibilityScore: 0,
     removalTag: "",
-    profile: "asfasfafsfadff",
-    imageUrl: "https://i0.wp.com/www.whatgivesphilanthropy.com/wp-content/uploads/2016/05/ZH_Headshot.jpg?resize=200%2C200&ssl=1"
+    imageUrl: ""
+}, {
+    friendName: 'Terry',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 9,
+    moralsAverage: 8,
+    interestsAverage: 9,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/236x/80/8d/45/808d453e3db89dab7bf83a0a7f58fece.jpg'
+}, {
+    friendName: 'Saul',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 3,
+    moralsAverage: 10,
+    interestsAverage: 4,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'https://www.teachforamerica.org/sites/default/files/styles/profile_image/public/thumbnails/image/2016/08/miguel_solis_headshot.jpg?itok=kLkLUbX8'
+}, {
+    friendName: 'Salvador',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 6,
+    moralsAverage: 2,
+    interestsAverage: 9,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'http://s.huffpost.com/contributors/joe-hutcheson/headshot.jpg'
+}, {
+    friendName: 'Shaun',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 1,
+    moralsAverage: 8,
+    interestsAverage: 2,
+    superficialityAverage: 7,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'http://studiomark.com/photography-folder/Aug06images/Picture-2066.jpg'
+}, {
+    friendName: 'Sid',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 4,
+    moralsAverage: 9,
+    interestsAverage: 9,
+    superficialityAverage: 9,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'https://www.teachforamerica.org/sites/default/files/styles/profile_image/public/thumbnails/image/2016/08/miguel_solis_headshot.jpg?itok=kLkLUbX8'
+}, {
+    friendName: 'Van',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 8,
+    moralsAverage: 8,
+    interestsAverage: 10,
+    superficialityAverage: 8,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Kris',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 6,
+    moralsAverage: 1,
+    interestsAverage: 4,
+    superficialityAverage: 8,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'https://www.teachforamerica.org/sites/default/files/styles/list_thumbnail/public/thumbnails/image/2016/02/jonas_chartock.jpg?itok=BbZ-y5Tr'
+}, {
+    friendName: 'Damion',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 8,
+    moralsAverage: 4,
+    interestsAverage: 8,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Carson',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 3,
+    moralsAverage: 3,
+    interestsAverage: 2,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/57/06/7e/57067e2b81f820df9c544ccc151f7c3e.jpg'
+}, {
+    friendName: 'Bradley',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 5,
+    moralsAverage: 2,
+    interestsAverage: 1,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'https://1.bp.blogspot.com/-9lWMsGIseIo/WHc7h_DAwRI/AAAAAAAAAfw/iQuHZ8mh4i0O3XOZptpXLfLJH0vc3haEQCLcB/s1600/headshot1_200.jpg'
+}, {
+    friendName: 'Abraham',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 1,
+    moralsAverage: 1,
+    interestsAverage: 3,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'http://www.nuskool.com/learn/wp-content/uploads/2015/02/Steven-Netcoh-headshot-2014.jpg'
+}, {
+    friendName: 'Gerry',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 10,
+    moralsAverage: 6,
+    interestsAverage: 6,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'https://cdn.thestage.co.uk/wp-content/uploads/2015/03/Matt-Trueman-contributor-headshot.jpg'
+}, {
+    friendName: 'Patrick',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 7,
+    moralsAverage: 10,
+    interestsAverage: 1,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'http://s.huffpost.com/contributors/lord-darzi/headshot.jpg'
+}, {
+    friendName: 'Jose',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 7,
+    moralsAverage: 3,
+    interestsAverage: 1,
+    superficialityAverage: 7,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'http://d36m266ykvepgv.cloudfront.net/uploads/media/u4W5e4HTRF/s-200-200/mm-headshot.jpg'
+}, {
+    friendName: 'Ira',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 5,
+    moralsAverage: 3,
+    interestsAverage: 8,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'http://rackcdn.elephantjournal.com/wp-content/uploads/2016/09/EJ_Headshot2.jpg'
+}, {
+    friendName: 'Toby',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 8,
+    moralsAverage: 8,
+    interestsAverage: 10,
+    superficialityAverage: 9,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'https://lh3.googleusercontent.com/TVjPIRbOR080A9ma8s-AwQnMj7UEnelwyDUJt4lXXGxny4x9952VL_qjCmrOJgqVfwtzIRk0dG5GOnV8dM8cIxD7vO0x=w200-h200-c'
+}, {
+    friendName: 'Silas',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 4,
+    moralsAverage: 7,
+    interestsAverage: 9,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: 'http://www.gannett-cdn.com/-mm-/2ec48c63c481e52e256eb35e193684e9c2ae4e03/c=0-140-864-1004&r=x203&c=200x200/local/-/media/2017/01/20/WisPub/NorthShore/636205221880873316-AriMatusiak-RenovateAmerica-HeadShot.jpg'
+}, {
+    friendName: 'Raul',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 8,
+    moralsAverage: 2,
+    interestsAverage: 8,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Basil',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 7,
+    moralsAverage: 4,
+    interestsAverage: 3,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Vincenzo',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 3,
+    moralsAverage: 7,
+    interestsAverage: 2,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Jerold',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 9,
+    moralsAverage: 8,
+    interestsAverage: 6,
+    superficialityAverage: 8,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Amos',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 1,
+    moralsAverage: 10,
+    interestsAverage: 1,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Cyrus',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 6,
+    moralsAverage: 4,
+    interestsAverage: 7,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Cornell',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 2,
+    moralsAverage: 8,
+    interestsAverage: 3,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Dexter',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 1,
+    moralsAverage: 1,
+    interestsAverage: 9,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Elbert',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 5,
+    moralsAverage: 8,
+    interestsAverage: 7,
+    superficialityAverage: 8,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Clayton',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 2,
+    moralsAverage: 10,
+    interestsAverage: 5,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Douglass',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 2,
+    moralsAverage: 3,
+    interestsAverage: 6,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Glen',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 6,
+    moralsAverage: 3,
+    interestsAverage: 10,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Ramon',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 7,
+    moralsAverage: 8,
+    interestsAverage: 6,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Arthur',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 6,
+    moralsAverage: 9,
+    interestsAverage: 9,
+    superficialityAverage: 7,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Nathan',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 1,
+    moralsAverage: 10,
+    interestsAverage: 10,
+    superficialityAverage: 7,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Cletus',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 3,
+    moralsAverage: 2,
+    interestsAverage: 4,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Rosario',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 10,
+    moralsAverage: 5,
+    interestsAverage: 8,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Elden',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 7,
+    moralsAverage: 5,
+    interestsAverage: 9,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Otis',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 6,
+    moralsAverage: 5,
+    interestsAverage: 6,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Jonathan',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 4,
+    moralsAverage: 2,
+    interestsAverage: 3,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Quintin',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 9,
+    moralsAverage: 9,
+    interestsAverage: 2,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Hank',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 9,
+    moralsAverage: 8,
+    interestsAverage: 8,
+    superficialityAverage: 8,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Emile',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 1,
+    moralsAverage: 9,
+    interestsAverage: 4,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Dustin',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 2,
+    moralsAverage: 5,
+    interestsAverage: 10,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Josh',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 10,
+    moralsAverage: 2,
+    interestsAverage: 6,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Jewel',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 1,
+    moralsAverage: 2,
+    interestsAverage: 6,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Donnell',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 1,
+    moralsAverage: 8,
+    interestsAverage: 1,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Oscar',
+    ageRange: 'younger',
+    gender: 'male',
+    leisureAverage: 4,
+    moralsAverage: 1,
+    interestsAverage: 2,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Stevie',
+    ageRange: 'mid',
+    gender: 'male',
+    leisureAverage: 6,
+    moralsAverage: 8,
+    interestsAverage: 1,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Emmett',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 5,
+    moralsAverage: 6,
+    interestsAverage: 9,
+    superficialityAverage: 7,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Bedford',
+    ageRange: 'older',
+    gender: 'male',
+    leisureAverage: 6,
+    moralsAverage: 5,
+    interestsAverage: 7,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Inga',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 5,
+    moralsAverage: 9,
+    interestsAverage: 3,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Yvette',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 9,
+    moralsAverage: 3,
+    interestsAverage: 1,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Svetlana',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 7,
+    moralsAverage: 10,
+    interestsAverage: 1,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Marjory',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 10,
+    moralsAverage: 8,
+    interestsAverage: 4,
+    superficialityAverage: 9,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Nancee',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 8,
+    moralsAverage: 6,
+    interestsAverage: 10,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Edelmira',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 1,
+    moralsAverage: 2,
+    interestsAverage: 3,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Jacqueline',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 3,
+    interestsAverage: 3,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Yoshiko',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 7,
+    interestsAverage: 6,
+    superficialityAverage: 7,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Estella',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 10,
+    moralsAverage: 5,
+    interestsAverage: 8,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Marquita',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 2,
+    moralsAverage: 10,
+    interestsAverage: 3,
+    superficialityAverage: 7,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Karrie',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 7,
+    interestsAverage: 1,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Lawanna',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 3,
+    moralsAverage: 5,
+    interestsAverage: 1,
+    superficialityAverage: 7,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Shea',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 3,
+    moralsAverage: 10,
+    interestsAverage: 8,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Britany',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 2,
+    moralsAverage: 8,
+    interestsAverage: 7,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Celinda',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 2,
+    moralsAverage: 6,
+    interestsAverage: 4,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Nicolasa',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 3,
+    interestsAverage: 6,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Lizette',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 6,
+    moralsAverage: 10,
+    interestsAverage: 6,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Teisha',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 10,
+    moralsAverage: 7,
+    interestsAverage: 7,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Valeria',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 10,
+    moralsAverage: 4,
+    interestsAverage: 2,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Trinity',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 10,
+    moralsAverage: 8,
+    interestsAverage: 9,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Nelida',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 3,
+    interestsAverage: 6,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Breann',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 5,
+    moralsAverage: 1,
+    interestsAverage: 10,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Lorette',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 6,
+    moralsAverage: 7,
+    interestsAverage: 6,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Shanika',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 9,
+    moralsAverage: 3,
+    interestsAverage: 10,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Serena',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 7,
+    moralsAverage: 5,
+    interestsAverage: 1,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Thora',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 10,
+    moralsAverage: 4,
+    interestsAverage: 3,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Bobette',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 7,
+    moralsAverage: 8,
+    interestsAverage: 7,
+    superficialityAverage: 4,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Merrilee',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 6,
+    moralsAverage: 10,
+    interestsAverage: 9,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Trish',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 1,
+    interestsAverage: 2,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Jina',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 8,
+    moralsAverage: 8,
+    interestsAverage: 2,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Blythe',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 1,
+    interestsAverage: 7,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Junko',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 8,
+    moralsAverage: 7,
+    interestsAverage: 2,
+    superficialityAverage: 2,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Isadora',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 6,
+    moralsAverage: 2,
+    interestsAverage: 4,
+    superficialityAverage: 6,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Chrystal',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 6,
+    moralsAverage: 10,
+    interestsAverage: 7,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Lavonna',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 2,
+    moralsAverage: 4,
+    interestsAverage: 1,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Kandi',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 6,
+    moralsAverage: 7,
+    interestsAverage: 10,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Wanda',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 6,
+    moralsAverage: 2,
+    interestsAverage: 1,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Candelaria',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 7,
+    moralsAverage: 9,
+    interestsAverage: 3,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Ehtel',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 2,
+    moralsAverage: 5,
+    interestsAverage: 1,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Jddana',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 1,
+    interestsAverage: 8,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Petronila',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 10,
+    moralsAverage: 4,
+    interestsAverage: 9,
+    superficialityAverage: 8,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Soraya',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 10,
+    moralsAverage: 8,
+    interestsAverage: 2,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Debrah  ',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 6,
+    moralsAverage: 4,
+    interestsAverage: 4,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Rossie',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 1,
+    interestsAverage: 3,
+    superficialityAverage: 8,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Hue',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 6,
+    moralsAverage: 7,
+    interestsAverage: 6,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Hanh',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 4,
+    moralsAverage: 6,
+    interestsAverage: 2,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Maximina',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 2,
+    moralsAverage: 5,
+    interestsAverage: 1,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Milagros',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 3,
+    moralsAverage: 6,
+    interestsAverage: 7,
+    superficialityAverage: 7,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Huong',
+    ageRange: 'older',
+    gender: 'female',
+    leisureAverage: 7,
+    moralsAverage: 2,
+    interestsAverage: 8,
+    superficialityAverage: 1,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Laurene',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 10,
+    moralsAverage: 2,
+    interestsAverage: 9,
+    superficialityAverage: 3,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Josie',
+    ageRange: 'mid',
+    gender: 'female',
+    leisureAverage: 7,
+    moralsAverage: 6,
+    interestsAverage: 4,
+    superficialityAverage: 5,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}, {
+    friendName: 'Araceli',
+    ageRange: 'younger',
+    gender: 'female',
+    leisureAverage: 1,
+    moralsAverage: 4,
+    interestsAverage: 4,
+    superficialityAverage: 10,
+    compatibilityScore: 0,
+    removalTag: '',
+    imageUrl: ''
+}];
 
-}, ];
-
-// Note how we export the array. This makes it accessible to other files using require.
+// Note how we export the array. This makes it accessible to other files ddsing reqddire.
 module.exports = friends;
+
+
+
+
+// var maleNamesArray = [ 
+//     "Terry",  
+//     "Saddl",  
+//     "Salvador",  
+//     "Shaddn",  
+//     "Sid",   
+//     "Van",  
+//     "Kris",  
+//     "Damion",  
+//     "Carson",  
+//     "Bradley",  
+//     "Abraham",  
+//     "Gerry",  
+//     "Patrick",  
+//     "Jose",  
+//     "Ira",  
+//     "Toby",  
+//     "Silas",  
+//     "Raddl",  
+//     "Basil",  
+//     "Vincenzo",  
+//     "Jerold",  
+//     "Amos",  
+//     "Cyrdds",  
+//     "Cornell",  
+//     "Dexter",  
+//     "Elbert",  
+//     "Clayton",  
+//     "Doddglass",  
+//     "Glen",  
+//     "Ramon",  
+//     "Arthddr",  
+//     "Nathan",  
+//     "Cletdds",  
+//     "Rosario",  
+//     "Elden",  
+//     "Otis",  
+//     "Jonathan",  
+//     "Qddintin",  
+//     "Hank",  
+//     "Emile",  
+//     "Dddstin",  
+//     "Josh",  
+//     "Jewel",  
+//     "Donnell",  
+//     "Oscar",  
+//     "Stevie",  
+//     "Emmett",  
+//     "Bddford"
+// ]; 
+
+// var femaleNamesArray = [
+//     "Inga",  
+//     "Yvette",  
+//     "Svetlana",  
+//     "Marjory",  
+//     "Nancee",  
+//     "Edelmira",  
+//     "Jacqueline",  
+//     "Yoshiko",  
+//     "Estella",  
+//     "Marquita",  
+//     "Karrie",  
+//     "Lawanna",  
+//     "Shea",  
+//     "Britany",  
+//     "Celinda",  
+//     "Nicolasa",  
+//     "Lizette",  
+//     "Teisha",  
+//     "Valeria",  
+//     "Trinity",  
+//     "Nelida",  
+//     "Breann",  
+//     "Lorette",  
+//     "Shanika",  
+//     "Serena",  
+//     "Thora",  
+//     "Bobette",  
+//     "Merrilee",  
+//     "Trish",  
+//     "Jina",  
+//     "Blythe",  
+//     "Junko",  
+//     "Isadora",  
+//     "Chrystal",    
+//     "Lavonna",  
+//     "Kandi",  
+//     "Wanda",  
+//     "Candelaria",  
+//     "Ehtel",   
+//     "Jddana",  
+//     "Petronila",  
+//     "Soraya",
+//     "Debrah  ",
+//     "Rossie",  
+//     "Hue",  
+//     "Hanh",  
+//     "Maximina",  
+//     "Milagros",  
+//     "Huong",  
+//     "Laurene",  
+//     "Josie",  
+//     "Araceli"
+// ];  
+
+
+
+// var maleObject = {
+//     friendName: maleNamesArray[i],
+//     ageRange: randAgeGroup,
+//     gender: "male",
+//     leisureAverage: randOne,
+//     moralsAverage: randTwo,
+//     interestsAverage: randThree,
+//     superficialityAverage: randFour,
+//     compatibilityScore: 0,
+//     removalTag: "",
+//     imageUrl: ""
+// },
+
+// var femaleObject = {
+//     friendName: femaleNamesArray[i],
+//     ageRange: randAgeGroup,
+//     gender: "female",
+//     leisureAverage: randOne,
+//     moralsAverage: randTwo,
+//     interestsAverage: randThree,
+//     superficialityAverage: randFour,
+//     compatibilityScore: 0,
+//     removalTag: "",
+//     imageUrl: ""
+// }
+
+// used to generate random data
+// var ageGroupArray = ["younger", "mid", "older"];
+// for (var i = 0; i < 53; i++) {
+//     var rand = Math.floor(Math.random() * 3);
+//     var randAgeGroup = ageGroupArray[rand];
+//     var randOne = Math.floor((Math.random() * 10) + 1);
+//     var randTwo = Math.floor((Math.random() * 10) + 1);
+//     var randThree = Math.floor((Math.random() * 10) + 1);
+//     var randFour = Math.floor((Math.random() * 10) + 1);
+
+//     var femaleObject = {
+//         friendName: femaleNamesArray[i],
+//         ageRange: randAgeGroup,
+//         gender: "female",
+//         leisureAverage: randOne,
+//         moralsAverage: randTwo,
+//         interestsAverage: randThree,
+//         superficialityAverage: randFour,
+//         compatibilityScore: 0,
+//         removalTag: "",
+//         imageUrl: ""
+//     }
+
+//     console.log(femaleObject);
+// }
