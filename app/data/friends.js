@@ -330,7 +330,7 @@ var friends = [{
     superficialityAverage: 8,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.thewarrengroupevents.com/bankworld/wp-content/uploads/sites/10/2016/11/al-rosenbaum-headshot.jpg'
 }, {
     friendName: 'Avery',
     ageRange: 'older',
@@ -385,7 +385,7 @@ var friends = [{
     superficialityAverage: 8,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://www.teachforamerica.org/sites/default/files/styles/list_thumbnail/public/thumbnails/image/2016/02/troye_bullock.jpg?itok=0YMaHmnt'
 }, {
     friendName: 'Clayton',
     ageRange: 'mid',
@@ -407,7 +407,7 @@ var friends = [{
     superficialityAverage: 6,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://www.teachforamerica.org/sites/default/files/styles/profile_image/public/thumbnails/image/2015/11/chris_headshot_11.20.15.jpg?itok=fvbni3O2'
 }, {
     friendName: 'Glen',
     ageRange: 'younger',
@@ -473,9 +473,9 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.thewarrengroupevents.com/bankworld/wp-content/uploads/sites/10/2016/11/al-rosenbaum-headshot.jpg'
 }, {
-    friendName: 'Elden',
+    friendName: 'Elden H.',
     ageRange: 'older',
     gender: 'male',
     leisureAverage: 7,
@@ -484,7 +484,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/236x/67/28/a0/6728a009e66fc4d26cb58cf7f96a7513.jpg'
 }, {
     friendName: 'Otis',
     ageRange: 'older',
@@ -495,7 +495,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://d36m266ykvepgv.cloudfront.net/uploads/media/u4W5e4HTRF/s-200-200/mm-headshot.jpg'
 }, {
     friendName: 'Jonathan',
     ageRange: 'older',
@@ -506,7 +506,7 @@ var friends = [{
     superficialityAverage: 6,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://d1we5yax8fyln6.cloudfront.net/sites/stage32.com/files/imagecache/head_shot_200/headshots/15d0e182185cb232a36a7cd54e830fe3_1446752897_l.jpg'
 }, {
     friendName: 'Quintin',
     ageRange: 'mid',
@@ -519,7 +519,7 @@ var friends = [{
     removalTag: '',
     imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/c1/50/e9/c150e9ed7b06548481b196f34608253d.jpg'
 }, {
-    friendName: 'Hank',
+    friendName: 'Hank W.',
     ageRange: 'older',
     gender: 'male',
     leisureAverage: 9,
@@ -528,7 +528,7 @@ var friends = [{
     superficialityAverage: 8,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://www.wellesley.edu/sites/default/files/styles/faculty_profile_portrait_manual/public/andymowbray200x200_0.jpg?itok=i9nqy8Mp'
 }, {
     friendName: 'Milo J.',
     ageRange: 'mid',
@@ -561,7 +561,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://mozilla.github.io/content/web-lit-whitepaper/images/personas/persona-welder.png'
 }, {
     friendName: 'Jerry',
     ageRange: 'younger',
@@ -572,7 +572,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://s.huffpost.com/contributors/chirag-kulkarni/headshot.jpg'
 }, {
     friendName: 'Donnell',
     ageRange: 'older',
@@ -583,7 +583,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://lh3.googleusercontent.com/-vnoVXwpwfGQgBgn3K7dtthoMKIXgeuzri6Yvmap6GASVQ1pu9McpsWXbwrZT3BgDHS6sGvFiVcqXppeoecAmJx_6E0=w200-h200-c'
 }, {
     friendName: 'Oscar',
     ageRange: 'younger',
@@ -594,7 +594,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.gannett-cdn.com/-mm-/2ec48c63c481e52e256eb35e193684e9c2ae4e03/c=0-140-864-1004&r=x203&c=200x200/local/-/media/2017/01/20/WisPub/NorthShore/636205221880873316-AriMatusiak-RenovateAmerica-HeadShot.jpg'
 }, {
     friendName: 'Stevie',
     ageRange: 'mid',
@@ -616,7 +616,7 @@ var friends = [{
     superficialityAverage: 7,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://cdn3.thr.com/sites/default/files/imagecache/portrait_300x450/2015/01/michael_thornton_1_rt1.jpg'
 }, {
     friendName: 'Manford',
     ageRange: 'older',
@@ -627,7 +627,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://flockler.com/thumbs/sites/192/tony_kitous_headshot_s200x0_q80.jpg'
 }, {
     friendName: 'Inga',
     ageRange: 'mid',

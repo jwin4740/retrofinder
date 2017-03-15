@@ -10,16 +10,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <style>
     .matchResult {
-        border: solid 2px black;
+        border-radius: 5px;
         height: 200px;
         width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"><span class="glyphicon glyphicon-user"></span> Your Match <span class="glyphicon glyphicon-user">
+            <br>
+        </div>
         <div class="row">
+         <div class="col-lg-1">
+            </div>
             <div class="col-lg-4">
                 <!-- Current Tables in Use -->
                 <div class="panel panel-default">
@@ -27,11 +36,15 @@
                         <h4 class="panel-title">You</h4>
                     </div>
                     <div class="panel-body" id="you">
-                        <img class="matchResult" id="yourImage" alt="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200">
+                        <img class="matchResult" id="yourImage" src="https://uwmccblog.files.wordpress.com/2017/01/image-placeholder-500x500.jpg?w=200">
                         <h3 id="userName"></h3>
-                        <p> about me information and data that describes why the match is a good match</p>
+                        <strong><p class="bio">AGE: <span id="userAge"></span> </p></strong>
+                        <br>
+                        <strong><p class="bio">SHORT BIO: <span id="userBio"></span> </p></strong>
                     </div>
                 </div>
+            </div>
+              <div class="col-lg-2">
             </div>
             <div class="col-lg-4">
                 <!-- Current Tables in Use -->
@@ -40,19 +53,21 @@
                         <h4 class="panel-title">Your match</h4>
                     </div>
                     <div class="panel-body">
-                        <img class="matchResult" id="yourMatch" alt="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200">
+                        <img src="https://uwmccblog.files.wordpress.com/2017/01/image-placeholder-500x500.jpg?w=200" class="matchResult" id="yourMatch">
                         <h3 id="matchName"></h3>
-                        <p> about me information and data that describes why the match is a good match</p>
+                        <strong><p class="bio">AGE: <span id="matchAge"></span></p></strong>
+                        <br>
+                        <strong><p class="bio">SHORT BIO: <span id="matchBio"></span></p></strong>
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container">
                 <p>Control Panel</p>
                 <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> | <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a></p>
             </div>
-        </footer>
+        </footer> -->
     </div>
     <script>
     // function Profile(name, imageUrl, leisureAvg, moralsAvg, interestsAvg, superficialityAvg, multiplyer, reducer) {
@@ -205,8 +220,8 @@
                 narrowedArray.push(dataArray[i]);
             }
         }
-     
-       
+
+
         getCompatibilityScores();
     }
 
@@ -334,7 +349,7 @@
         console.log(yourMatch.friendName);
         $("#matchName").html(yourMatch.friendName);
         $("#yourMatch").attr("src", yourMatch.imageUrl);
-         $("#userName").html(userDataObj.friendName);
+        $("#userName").html(userDataObj.friendName);
     }
     </script>
 </body>
