@@ -6,6 +6,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
+var path = require("path");
 // ==============================================================================
 // EXPRESS CONFIGURATION
 // This sets up the basic properties for our express server
@@ -29,6 +30,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
+app.use(express.static(path.join(__dirname, 'public')))
+
 
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
