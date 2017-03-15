@@ -28,7 +28,7 @@
                     </div>
                     <div class="panel-body" id="you">
                         <img class="matchResult" id="yourImage" alt="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200">
-                        <h3> name </h3>
+                        <h3 id="userName"></h3>
                         <p> about me information and data that describes why the match is a good match</p>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                     </div>
                     <div class="panel-body">
                         <img class="matchResult" id="yourMatch" alt="https://www.ucl.ac.uk/prospective-students/graduate/images/test/placeholder-200x200">
-                        <h3> name </h3>
+                        <h3 id="matchName"></h3>
                         <p> about me information and data that describes why the match is a good match</p>
                     </div>
                 </div>
@@ -143,6 +143,7 @@
     var dataArray = [];
     var userDataObj = "";
     var narrowedArray = [];
+    var yourMatch;
     var scaled;
     $.ajax({
             url: "/api/friends",
@@ -160,8 +161,7 @@
                         dataArray.push(data[i]);
                     }
                 }
-                setTimeout(console.log(userDataObj), 1500);
-                setTimeout(tossOut, 1000);
+                tossOut();
             }
         });
 
@@ -205,8 +205,9 @@
                 narrowedArray.push(dataArray[i]);
             }
         }
-        setTimeout(console.log(narrowedArray), 1500);
-        setTimeout(getCompatibilityScores, 2000);
+     
+       
+        getCompatibilityScores();
     }
 
     var categoryArray = ["leisure", "morals", "interests", "superficiality"];
@@ -302,16 +303,39 @@
                 narrowedArray[i].compatibilityScore += scaled;
             }
         }
-        setTimeout(sortResults, 2000);
+        sortResults();
     }
 
 
     function sortResults() {
         var n = narrowedArray.length;
+        var temp;
         for (var i = 0; i < n; i++) {
-            for (var j = 0; j < 4; j++) {
-
+            for (var j = 0; j < n; j++) {
+                if (j === n - 1) {
+                    break;
+                }
+                if (narrowedArray[j].compatibilityScore > narrowedArray[j + 1].compatibilityScore) {
+                    temp = narrowedArray[j];
+                    narrowedArray[j] = narrowedArray[j + 1];
+                    narrowedArray[j + 1] = temp;
+                }
             }
+        }
+
+        displayMatchDetails();
+
+    }
+
+
+    function displayMatchDetails() {
+        var n = narrowedArray.length;
+        yourMatch = narrowedArray[n - 1];
+        console.log(yourMatch.friendName);
+        $("#matchName").html(yourMatch.friendName);
+        $("#yourMatch").attr("src", yourMatch.imageUrl);
+         $("#userName").html(userDataObj.friendName);
+    }
     </script>
 </body>
 
