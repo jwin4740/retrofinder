@@ -165,7 +165,7 @@ var friends = [{
     superficialityAverage: 8,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://rackcdn.elephantjournal.com/wp-content/uploads/2015/10/David-Foster1.jpg'
 }, {
     friendName: 'Kris',
     ageRange: 'mid',
@@ -187,7 +187,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/236x/19/19/57/1919573324e16049ee121c233a31db31.jpg'
 }, {
     friendName: 'Carson',
     ageRange: 'older',
@@ -297,7 +297,7 @@ var friends = [{
     superficialityAverage: 10,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://studiomark.com/photography-folder/oct-2004-images/Picture-1053.jpg'
 }, {
     friendName: 'Basil',
     ageRange: 'older',
@@ -308,7 +308,7 @@ var friends = [{
     superficialityAverage: 6,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://format-com-cld-res.cloudinary.com/image/private/s--z-2Me2Kh--/c_fill,g_rek_faces,h_200,w_200/a_auto,fl_keep_iptc.progressive,q_95/v1/f318aded3a3e3b312ae82d3921628914/Reflc-Mville-6-3.jpg'
 }, {
     friendName: 'Vincenzo',
     ageRange: 'younger',
@@ -319,7 +319,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/fe/c5/98/fec5981d3a35014dd07acc5027cf5cbc.jpg'
 }, {
     friendName: 'Jerold',
     ageRange: 'older',
@@ -341,7 +341,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://d1ucq35w3rvlt9.cloudfront.net/81444-200x200.jpg'
 }, {
     friendName: 'Cyrus',
     ageRange: 'younger',
@@ -352,7 +352,7 @@ var friends = [{
     superficialityAverage: 6,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://format-com-cld-res.cloudinary.com/image/private/s--yPc5dWks--/c_fill,g_rek_faces,h_200,w_200/a_auto,fl_keep_iptc.progressive,q_95/v1/4524925e39121417d26b5e8093e4d5b4/Web_Mark_01.jpg'
 }, {
     friendName: 'Cornell',
     ageRange: 'younger',
@@ -363,7 +363,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/44/69/52/446952023ce5bbe1dd49ddec5a0190a2.jpg'
 }, {
     friendName: 'Dexter',
     ageRange: 'mid',
@@ -374,7 +374,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://bzmstudio.com/img/s5/v116/p2205098806-11.jpg'
 }, {
     friendName: 'Elbert',
     ageRange: 'younger',
@@ -396,7 +396,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://bzmstudio.com/img/s7/v161/p2205098809-11.jpg'
 }, {
     friendName: 'Douglass',
     ageRange: 'older',
@@ -418,7 +418,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://lh3.googleusercontent.com/TKVcyeOublrzuZBJQv5PjXOK0f3c33kFf5x6BDOx21NI4PnKXkk2JP-TEPBpZlNvLvQosCE4NBirwESa-DCtsyZrmxIg=w200-h200-c'
 }, {
     friendName: 'Ramon',
     ageRange: 'younger',
@@ -429,7 +429,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.motorcyclistonline.com/sites/motorcyclistonline.com/files/styles/200_square_upscale/public/tag-images/ari-henning-headshot.jpg?itok=GYPuRnC4'
 }, {
     friendName: 'Arthur',
     ageRange: 'younger',
@@ -440,7 +440,7 @@ var friends = [{
     superficialityAverage: 7,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/c8/55/34/c8553420c95024c73fd21502430a14a2.jpg'
 }, {
     friendName: 'Nathan',
     ageRange: 'mid',
@@ -451,9 +451,9 @@ var friends = [{
     superficialityAverage: 7,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://d26oc3sg82pgk3.cloudfront.net/files/media/uploads/zinnia/Cartwright_Marc.jpg.200x200_q90_crop-0,0_upscale.jpg'
 }, {
-    friendName: 'Cletus',
+    friendName: 'Samuel',
     ageRange: 'older',
     gender: 'male',
     leisureAverage: 3,
@@ -462,7 +462,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://d26oc3sg82pgk3.cloudfront.net/files/media/uploads/zinnia/Tom_Burke_Castable_Actor_2016.jpg.200x200_q90_crop-0,0_upscale.jpg'
 }, {
     friendName: 'Wayne',
     ageRange: 'older',
@@ -517,7 +517,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/c1/50/e9/c150e9ed7b06548481b196f34608253d.jpg'
 }, {
     friendName: 'Hank',
     ageRange: 'older',
@@ -539,7 +539,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/e7/67/60/e767600025e53dd24ed7542d4b9ebe99.jpg'
 }, {
     friendName: 'Dustin',
     ageRange: 'older',
@@ -550,7 +550,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.wconline.com/ext/resources/images/Authors/Headshots_Wyatt.png?1431708377'
 }, {
     friendName: 'Josh',
     ageRange: 'younger',
@@ -605,7 +605,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.hedgeweek.com/sites/default/files/imagecache/facebook_200_square/image_library/Headshots/Aquila%20Capital%20Roman%20Rosslenbroich.jpg'
 }, {
     friendName: 'Emmett',
     ageRange: 'older',
