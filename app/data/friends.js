@@ -860,7 +860,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Breann',
+    friendName: 'Breanne',
     ageRange: 'older',
     gender: 'female',
     leisureAverage: 5,
@@ -882,7 +882,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Shanika',
+    friendName: 'Katerina',
     ageRange: 'younger',
     gender: 'female',
     leisureAverage: 9,
@@ -915,7 +915,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Bobette',
+    friendName: 'Corinne',
     ageRange: 'younger',
     gender: 'female',
     leisureAverage: 7,
@@ -937,7 +937,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Trish',
+    friendName: 'Trisha',
     ageRange: 'mid',
     gender: 'female',
     leisureAverage: 4,
@@ -948,7 +948,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Jina',
+    friendName: 'Gina',
     ageRange: 'older',
     gender: 'female',
     leisureAverage: 8,
@@ -959,7 +959,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Blythe',
+    friendName: 'Blanche',
     ageRange: 'younger',
     gender: 'female',
     leisureAverage: 4,
@@ -970,7 +970,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Junko',
+    friendName: 'Marion',
     ageRange: 'younger',
     gender: 'female',
     leisureAverage: 8,
@@ -1014,7 +1014,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Kandi',
+    friendName: 'Kat',
     ageRange: 'mid',
     gender: 'female',
     leisureAverage: 6,
@@ -1047,7 +1047,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Ehtel',
+    friendName: 'Ethel',
     ageRange: 'mid',
     gender: 'female',
     leisureAverage: 2,
@@ -1058,7 +1058,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Jddana',
+    friendName: 'Jana',
     ageRange: 'younger',
     gender: 'female',
     leisureAverage: 4,
@@ -1091,7 +1091,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Debrah  ',
+    friendName: 'Debrah',
     ageRange: 'younger',
     gender: 'female',
     leisureAverage: 6,
@@ -1113,7 +1113,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Hue',
+    friendName: 'Mel',
     ageRange: 'younger',
     gender: 'female',
     leisureAverage: 6,
@@ -1124,7 +1124,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Hanh',
+    friendName: 'Hannah',
     ageRange: 'older',
     gender: 'female',
     leisureAverage: 4,
@@ -1146,7 +1146,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Milagros',
+    friendName: 'Milana',
     ageRange: 'younger',
     gender: 'female',
     leisureAverage: 3,
@@ -1157,7 +1157,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Huong',
+    friendName: 'Min',
     ageRange: 'older',
     gender: 'female',
     leisureAverage: 7,
@@ -1190,7 +1190,7 @@ var friends = [{
     removalTag: '',
     imageUrl: ''
 }, {
-    friendName: 'Araceli',
+    friendName: 'Aurelia',
     ageRange: 'younger',
     gender: 'female',
     leisureAverage: 1,

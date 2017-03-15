@@ -143,6 +143,7 @@
     var dataArray = [];
     var userDataObj = "";
     var narrowedArray = [];
+    var scaled;
     $.ajax({
             url: "/api/friends",
             method: "GET"
@@ -160,11 +161,14 @@
                     }
                 }
                 setTimeout(console.log(userDataObj), 1500);
-                setTimeout(tossOut, 1500);
+                setTimeout(tossOut, 1000);
             }
         });
 
 
+    //         narrowedArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.moralsAverage) - narrowedArray[i].moralsAverage);
+    //         narrowedArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.interestsAverage) - narrowedArray[i].interestsAverage);
+    //         narrowedArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.superficialityAverage) - narrowedArray[i].superficialityAverage);
 
 
     // will toss out people who meet certain requirements
@@ -194,7 +198,6 @@
                         dataArray[i].removalTag = true;
                     }
                     break;
-
             }
         }
         for (var i = 0; i < n; i++) {
@@ -202,25 +205,113 @@
                 narrowedArray.push(dataArray[i]);
             }
         }
-        setTimeout(console.log(narrowedArray), 3000);
+        setTimeout(console.log(narrowedArray), 1500);
+        setTimeout(getCompatibilityScores, 2000);
     }
 
+    var categoryArray = ["leisure", "morals", "interests", "superficiality"];
 
-
-
-
-
-    // setTimeout(getCompatibilityScores, 1500);
     function getCompatibilityScores() {
-        var n = dataArray.length;
+        var n = narrowedArray.length;
         for (var i = 0; i < n; i++) {
-            dataArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.leisureAverage) - dataArray[i].leisureAverage);
-            dataArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.moralsAverage) - dataArray[i].moralsAverage);
-            dataArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.interestsAverage) - dataArray[i].interestsAverage);
-            dataArray[i].compatibilityScore += Math.abs(parseInt(userDataObj.superficialityAverage) - dataArray[i].superficialityAverage);
+            for (var j = 0; j < 4; j++) {
+                var maximizer = 1;
+                var minimizer = 1;
+                var num = 0;
+                switch (true) {
+                    case (userDataObj.multiplyer === "leisure" && j === 0):
+                        maximizer = 2.5;
+                        break;
+                    case (userDataObj.multiplyer === "morals" && j === 1):
+                        maximizer = 2.5;
+                        console.log("moralsfire");
+                        break;
+                    case (userDataObj.multiplyer === "interests" && j === 2):
+                        maximizer = 2.5;
+                        console.log("interestsfire");
+                        break;
+                    case (userDataObj.multiplyer === "superficiality" && j === 3):
+                        maximizer = 2.5;
+                        console.log("superficialityfire");
+                        break;
+                    default:
+                        break;
+                }
+                switch (true) {
+                    case (userDataObj.reducer === "leisure" && j === 0):
+                        minimizer = 0.5;
+                        console.log("leisurefire");
+                        break;
+                    case (userDataObj.reducer === "morals" && j === 1):
+                        minimizer = 0.5;
+                        console.log("moralsfire");
+                        break;
+                    case (userDataObj.reducer === "interests" && j === 2):
+                        minimizer = 0.5;
+                        console.log("interestsfire");
+                        break;
+                    case (userDataObj.reducer === "superficiality" && j === 3):
+                        minimizer = 0.5;
+                        console.log("superficialityfire");
+                        break;
+                    default:
+                        break;
+                }
+                // var num = (Math.abs((narrowedArray[i].surveyResults[j].average) - (userDataObj.surveyResults[j].average)));
+                switch (true) {
+                    case (j === 0):
+                        num = Math.abs(parseInt(userDataObj.leisureAverage) - narrowedArray[i].leisureAverage);
+                        break;
+                    case (j === 1):
+                        num = Math.abs(parseInt(userDataObj.moralsAverage) - narrowedArray[i].moralsAverage);
+                        break;
+                    case (j === 2):
+                        num = Math.abs(parseInt(userDataObj.interestsAverage) - narrowedArray[i].interestsAverage);
+                        break;
+                    case (j === 3):
+                        num = Math.abs(parseInt(userDataObj.superficialityAverage) - narrowedArray[i].superficialityAverage);
+                        break;
+                }
+
+                var num = num.toFixed(2);
+                var scaled = 0;
+                switch (true) {
+                    case (num < 1):
+                        scaled = 10 * minimizer * maximizer;
+                        break;
+                    case (num >= 1 && num < 2):
+                        scaled = 8 * minimizer * maximizer;
+                        break;
+                    case (num >= 2 && num < 3):
+                        scaled = 6 * minimizer * maximizer;
+                        break;
+                    case (num >= 3 && num < 4):
+                        scaled = 5 * minimizer * maximizer;
+                        break;
+                    case (num >= 4 && num < 5):
+                        scaled = 4 * minimizer * maximizer;
+                        break;
+                    case (num >= 5 && num < 6):
+                        scaled = 2 * minimizer * maximizer;
+                        break;
+                    case (num >= 6):
+                        scaled = 0;
+                        break;
+                }
+
+                narrowedArray[i].compatibilityScore += scaled;
+            }
         }
-        setTimeout(console.log(dataArray), 1500);
+        setTimeout(sortResults, 2000);
     }
+
+
+    function sortResults() {
+        var n = narrowedArray.length;
+        for (var i = 0; i < n; i++) {
+            for (var j = 0; j < 4; j++) {
+
+            }
     </script>
 </body>
 
