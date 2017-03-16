@@ -63,7 +63,7 @@ var friends = [{
     superficialityAverage: 7,
     compatibilityScore: 0,
     removalTag: "",
-    imageUrl: ""
+    imageUrl: "https://s-media-cache-ak0.pinimg.com/736x/71/07/f6/7107f64d5d0e04613c53c26843da1f75.jpg"
 
 }, {
     friendName: "Angelica",
@@ -75,7 +75,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: "",
-    imageUrl: ""
+    imageUrl: "https://s-media-cache-ak0.pinimg.com/236x/30/8d/c2/308dc25b90277b8fcbf79192fcd88113.jpg"
 
 }, {
     friendName: "Eliza",
@@ -87,7 +87,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: "",
-    imageUrl: ""
+    imageUrl: "https://s-media-cache-ak0.pinimg.com/736x/01/ae/66/01ae667638d1921a2f46707b1ee275f9.jpg"
 
 }, {
     friendName: "Peggy",
@@ -99,7 +99,7 @@ var friends = [{
     superficialityAverage: 9,
     compatibilityScore: 0,
     removalTag: "",
-    imageUrl: ""
+    imageUrl: "https://format-com-cld-res.cloudinary.com/image/private/s--tGFjghdQ--/c_fill,g_rek_faces,h_200,w_200/a_auto,fl_keep_iptc.progressive,q_95/Grey_background_headshot_of_a_female_employee_in_Hong_Kong_photographed_by_l_Atelier_Photo_umvbow.jpg"
 }, {
     friendName: 'Terry',
     ageRange: 'younger',
@@ -638,7 +638,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://intermountainhealthcare.org/-/media/images/global/1-1/young-female-nurse-smiling-headshot.jpg?mh=200&mw=200'
 }, {
     friendName: 'Yvette',
     ageRange: 'older',
@@ -671,7 +671,7 @@ var friends = [{
     superficialityAverage: 9,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://womensearthalliance.org/wp-content/uploads/2015/09/headshot-200x200.jpg'
 }, {
     friendName: 'Nancee',
     ageRange: 'older',
@@ -693,7 +693,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://i2.lisimg.com/1113892/200full.jpg'
 }, {
     friendName: 'Jacqueline',
     ageRange: 'mid',
@@ -704,7 +704,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/51/db/88/51db88bf32bf5bbe3b60e557c55a1889.jpg'
 }, {
     friendName: 'Halle',
     ageRange: 'mid',
@@ -726,7 +726,7 @@ var friends = [{
     superficialityAverage: 6,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://images.sxsw.com/vyBKGN2JtzcvdmA1-SafcWCLE_M=/202x57:1721x1576/200x/images.sxsw.com/9/c9022e8c-9217-4b59-8cfa-10596b2086e8/DirectorHeadshot-129'
 }, {
     friendName: 'Marquita',
     ageRange: 'mid',
@@ -737,7 +737,7 @@ var friends = [{
     superficialityAverage: 7,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://s.huffpost.com/contributors/nina-ansary/headshot.jpg'
 }, {
     friendName: 'Karrie',
     ageRange: 'older',
@@ -748,7 +748,7 @@ var friends = [{
     superficialityAverage: 6,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://lightandshine.com/wp-content/uploads/2016/08/Praise-Jessica-1.jpg'
 }, {
     friendName: 'Lawanna',
     ageRange: 'younger',
@@ -759,7 +759,7 @@ var friends = [{
     superficialityAverage: 7,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://format-com-cld-res.cloudinary.com/image/private/s--yOdzH99Y--/c_fill,g_rek_faces,h_200,w_200/a_auto,fl_keep_iptc.progressive,q_95/v1/e3489376a127841e0fd2b8b7a156343d/I_ZELL_PRINT.jpg'
 }, {
     friendName: 'Shea',
     ageRange: 'older',
@@ -792,7 +792,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAcwAAAAJGE2OTA1NWMwLTk2NTgtNGZiYi1iNzg1LThkM2EwZjdkMDIyYQ.jpg'
 }, {
     friendName: 'Nicolasa',
     ageRange: 'older',
@@ -814,7 +814,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://i1.wp.com/i1249.photobucket.com/albums/hh501/myreadingaddiction/CeceliaMeccaHeadshot3_zps1ownbdz9.jpg'
 }, {
     friendName: 'Taisha',
     ageRange: 'younger',
@@ -825,7 +825,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/236x/17/ea/03/17ea0306d422af160cb938f145353195.jpg'
 }, {
     friendName: 'Valeria',
     ageRange: 'mid',
@@ -836,7 +836,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/originals/54/f2/40/54f240eec6556d2ede075f48712246cf.jpg'
 }, {
     friendName: 'Karla',
     ageRange: 'older',
@@ -847,7 +847,7 @@ var friends = [{
     superficialityAverage: 6,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/9b/21/11/9b2111d0faa6613b0922d3a13c81f60a.jpg'
 }, {
     friendName: 'Nelida',
     ageRange: 'younger',
@@ -858,9 +858,9 @@ var friends = [{
     superficialityAverage: 3,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://cdn.c.photoshelter.com/img-get2/I00002MQWGag8U5c/fit=/fill=200x200/g=G00007p.iuAmOK4M/I00002MQWGag8U5c.jpg'
 }, {
-    friendName: 'Breanne',
+    friendName: 'Breanna',
     ageRange: 'older',
     gender: 'female',
     leisureAverage: 5,
@@ -880,7 +880,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://rightbrainersinbusiness.com/wp-content/uploads/2011/01/danielle-laporte-headshot.jpg'
 }, {
     friendName: 'Katerina',
     ageRange: 'younger',
@@ -891,7 +891,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://i1.wp.com/i937.photobucket.com/albums/ad217/letthewordsflow/Contributor%20Headshots/Vanessa-Di-Gregorio-Headshot-Hogwarts-1.jpg'
 }, {
     friendName: 'Serena',
     ageRange: 'mid',
@@ -902,7 +902,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://udemy-images.udemy.com/user/200_H/7770394_e7fb.jpg'
 }, {
     friendName: 'Thora',
     ageRange: 'older',
@@ -913,7 +913,7 @@ var friends = [{
     superficialityAverage: 6,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://www.spenational.org/files/conferences/speakers/200/headshot11.jpg'
 }, {
     friendName: 'Corinne',
     ageRange: 'younger',
@@ -924,7 +924,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/07/c5/ec/07c5ecb4bf2228047561d047aec38604.jpg'
 }, {
     friendName: 'Merrilee',
     ageRange: 'younger',
@@ -935,7 +935,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://innovationsdanceacademy.com/wp-content/uploads/2015/08/headshot-jessica-sperry-200x200.jpg'
 }, {
     friendName: 'Trisha',
     ageRange: 'mid',
@@ -946,7 +946,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://media.cutimes.com/cutimes/2016/06/09/headshotadele136.jpg'
 }, {
     friendName: 'Gina',
     ageRange: 'older',
@@ -957,7 +957,7 @@ var friends = [{
     superficialityAverage: 10,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://cambridgewritersworkshop.files.wordpress.com/2016/08/barnes_headshot-1.jpeg'
 }, {
     friendName: 'Blanche',
     ageRange: 'younger',
@@ -968,7 +968,7 @@ var friends = [{
     superficialityAverage: 10,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/00/ee/22/00ee22055bdf1bb559d1258e1d5cb198.jpg'
 }, {
     friendName: 'Marion',
     ageRange: 'younger',
@@ -979,7 +979,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.sachikostudio.com/wp-content/uploads/2011/03/kubota-couple-13-5714-X2-200x200.jpg'
 }, {
     friendName: 'Isadora',
     ageRange: 'mid',
@@ -990,7 +990,7 @@ var friends = [{
     superficialityAverage: 6,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://s.huffpost.com/contributors/tajci-cameron-/headshot.jpg'
 }, {
     friendName: 'Chrystal',
     ageRange: 'younger',
@@ -1001,7 +1001,7 @@ var friends = [{
     superficialityAverage: 3,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/b9/aa/4b/b9aa4bf408af26434a624bef69d8fa00.jpg'
 }, {
     friendName: 'Lavonna',
     ageRange: 'older',
@@ -1012,7 +1012,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/236x/bd/74/1f/bd741f4132e3d5fd635d88171a5cb6da.jpg'
 }, {
     friendName: 'Kat',
     ageRange: 'mid',
@@ -1023,7 +1023,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/4c/8c/7b/4c8c7b16b7e958de5757df440d7404b4.jpg'
 }, {
     friendName: 'Wanda',
     ageRange: 'mid',
@@ -1034,7 +1034,7 @@ var friends = [{
     superficialityAverage: 3,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://www.google.com/search?q=female+headshot&safe=strict&espv=2&biw=1366&bih=638&tbm=isch&source=lnt&tbs=isz:ex,iszw:200,iszh:200#safe=strict&tbs=isz:ex,iszw:200,iszh:200&tbm=isch&q=russian+female+headshot&*&imgrc=eQZG93POYiwvEM:'
 }, {
     friendName: 'Candelaria',
     ageRange: 'younger',
@@ -1045,7 +1045,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.gannett-cdn.com/-mm-/0012da04e85df88900dc6f0704daeacbf48fea46/c=7-0-2571-2571&r=x203&c=200x200/local/-/media/Rochester/2014/06/06/candacekendallheadshot.jpeg'
 }, {
     friendName: 'Ethel',
     ageRange: 'mid',
@@ -1056,7 +1056,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://cdn.tutsplus.com/photo/uploads/legacy/737_posingportraits/preview.jpg'
 }, {
     friendName: 'Jana',
     ageRange: 'younger',
@@ -1067,7 +1067,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://s-media-cache-ak0.pinimg.com/736x/00/ee/22/00ee22055bdf1bb559d1258e1d5cb198.jpg'
 }, {
     friendName: 'Petronila',
     ageRange: 'mid',
@@ -1078,7 +1078,7 @@ var friends = [{
     superficialityAverage: 8,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.johna-miller.com/wp-content/uploads/2014/09/Headshot-200x200.jpg'
 }, {
     friendName: 'Soraya',
     ageRange: 'older',
@@ -1089,7 +1089,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://i0.wp.com/therumpus.net/wp-content/uploads/2014/07/FRANCESCA-LIA-BLOCK-2013-HEADSHOT-L.A.-SHIRT.jpg?fit=200%2C200'
 }, {
     friendName: 'Deborah',
     ageRange: 'younger',
@@ -1111,7 +1111,7 @@ var friends = [{
     superficialityAverage: 8,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://static1.squarespace.com/static/57ab512f9de4bbfd6c514caa/t/58701df9c534a572c555c8c6/1483745788400/Stef+headshot.jpg'
 }, {
     friendName: 'Mel',
     ageRange: 'younger',
@@ -1133,7 +1133,7 @@ var friends = [{
     superficialityAverage: 10,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://s.huffpost.com/contributors/bianna-golodryga/headshot.jpg'
 }, {
     friendName: 'Maximina',
     ageRange: 'younger',
@@ -1155,9 +1155,9 @@ var friends = [{
     superficialityAverage: 7,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.officialpremiere.com/wp-content/uploads/2014/01/SheaJonesPresentation.jpg'
 }, {
-    friendName: 'Min',
+    friendName: 'Nina',
     ageRange: 'older',
     gender: 'female',
     leisureAverage: 7,
@@ -1166,7 +1166,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://lh3.googleusercontent.com/HKhtB-DNUt-YDTh6Bg1nxCJveG_z1YUeJp3SVkSO36Ouo7NPBCG5CpKJ_TMYXMyOjm6EEW9RmSewwVff2a_f0LeRR2g=w200-h200-c'
 }, {
     friendName: 'Laurene',
     ageRange: 'younger',
@@ -1177,7 +1177,7 @@ var friends = [{
     superficialityAverage: 3,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://newleafliterary.com/wp-content/uploads/2016/05/Marino-Headshot.jpg'
 }, {
     friendName: 'Josie',
     ageRange: 'mid',
@@ -1188,7 +1188,7 @@ var friends = [{
     superficialityAverage: 5,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://dzftds8z9s83c.cloudfront.net/profiles/avatars/production/804630/medium/Sami_Headshot.jpg?1448050331'
 }, {
     friendName: 'Aurelia',
     ageRange: 'younger',
@@ -1199,7 +1199,7 @@ var friends = [{
     superficialityAverage: 10,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://millennialmagazine.com/wp-content/uploads/2016/09/Bday-headshot-editor.jpg'
 }];
 
 // Note how we export the array. This makes it accessible to other files ddsing reqddire.
