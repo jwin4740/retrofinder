@@ -649,7 +649,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://cdn.c.photoshelter.com/img-get2/I0000JYNhlSBt7cc/fit=/fill=200x200/g=G0000UohiHlao8lY/I0000JYNhlSBt7cc.jpg'
 }, {
     friendName: 'Svetlana',
     ageRange: 'older',
@@ -660,7 +660,7 @@ var friends = [{
     superficialityAverage: 10,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://lightandshine.com/wp-content/uploads/2016/08/Molly-K.jpg'
 }, {
     friendName: 'Marjory',
     ageRange: 'mid',
@@ -682,7 +682,7 @@ var friends = [{
     superficialityAverage: 4,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://d1ucq35w3rvlt9.cloudfront.net/91822-thumb.jpg'
 }, {
     friendName: 'Edelmira',
     ageRange: 'older',
@@ -715,7 +715,7 @@ var friends = [{
     superficialityAverage: 7,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://d1we5yax8fyln6.cloudfront.net/sites/stage32.com/files/imagecache/head_shot_200/headshots/37f282b65b0c02665ab062693548d35d_1463168296_l.jpg'
 }, {
     friendName: 'Estella',
     ageRange: 'older',
@@ -770,7 +770,7 @@ var friends = [{
     superficialityAverage: 3,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://www.condohellmovie.com/images/headshots/amy-headshot.jpg'
 }, {
     friendName: 'Britany',
     ageRange: 'older',
@@ -781,7 +781,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://rs402.pbsrc.com/albums/pp102/aboutnici/Beautiful%20Women/headshots_002.jpg~c200'
 }, {
     friendName: 'Celinda',
     ageRange: 'older',
@@ -803,7 +803,7 @@ var friends = [{
     superficialityAverage: 10,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://greaterbeloitchamber.org/wp-content/uploads/2011/04/maggie-headshots-hs.jpg'
 }, {
     friendName: 'Lizette',
     ageRange: 'older',
@@ -869,7 +869,7 @@ var friends = [{
     superficialityAverage: 10,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAWeAAAAJDk2NWRkYzFjLTc5YzEtNGI5NC04ZTgwLTFiMWM1MGEwM2EzOQ.jpg'
 }, {
     friendName: 'Lorette',
     ageRange: 'older',
@@ -1100,7 +1100,7 @@ var friends = [{
     superficialityAverage: 3,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'https://d1we5yax8fyln6.cloudfront.net/sites/stage32.com/files/imagecache/head_shot_200/headshots/dabdef201ec66e00909a78dafaa9884f_1461044643_l.jpg'
 }, {
     friendName: 'Rossie',
     ageRange: 'younger',
@@ -1122,7 +1122,7 @@ var friends = [{
     superficialityAverage: 1,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://photos.modelmayhem.com/photos/160619/09/5766ca61a83bd_m.jpg'
 }, {
     friendName: 'Hannah',
     ageRange: 'older',
@@ -1144,7 +1144,7 @@ var friends = [{
     superficialityAverage: 3,
     compatibilityScore: 0,
     removalTag: '',
-    imageUrl: ''
+    imageUrl: 'http://lightandshine.com/wp-content/uploads/2016/08/Loica-J.jpg'
 }, {
     friendName: 'Milana',
     ageRange: 'younger',
