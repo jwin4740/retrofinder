@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>FriendFinder</title>
-       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!--        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -28,7 +33,6 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="/survey">Take Survey<span class="sr-only">(current)</span></a></li>
-                    <li><a href="/results">Results</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a target="_blank" href="/api/friends">API link</a></li>
@@ -44,7 +48,7 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container main">
         <h2>Survey Questions</h2>
         <hr>
         <div class="row">
@@ -355,7 +359,7 @@
         }
         // constructs user profile object based on their inputs and answers
         var newFriend = {
-            
+
             friendName: $("#friend-name").val().trim(),
             friendEmail: $("#friend-email").val().trim(),
             imageUrl: $("#friend-image").val().trim(),
@@ -390,10 +394,10 @@
                     // Clear the form when submitting
                     $("#friend-name").val("");
                     $("#friend-email").val("");
-                   
+
                     $("#friend-number").val("");
                     $("#friend-image").val("");
-                    
+
                     $("#gender").val("");
                     var url = "/results";
                     $(location).attr('href', url);
