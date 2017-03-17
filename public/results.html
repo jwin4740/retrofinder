@@ -74,9 +74,9 @@
                 </div>
                 <div class="col-lg-4">
                     <!-- Current Tables in Use -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-default matchbox">
                         <div class="panel-heading">
-                            <h4 class="panel-title">You</h4>
+                            <h4 style="font-size: 36px;" class="panel-title">You</h4>
                         </div>
                         <div class="panel-body matcher" id="you">
                             <img class="matchResult" id="yourImage" src="./images/Placeholder.png">
@@ -91,9 +91,9 @@
                 </div>
                 <div class="col-lg-4">
                     <!-- Current Tables in Use -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-default matchbox">
                         <div class="panel-heading">
-                            <h4 class="panel-title">Your match</h4>
+                            <h4 style="font-size: 36px;" class="panel-title">Your match</h4>
                         </div>
                         <div class="panel-body matcher">
                             <img src="https://uwmccblog.files.wordpress.com/2017/01/image-placeholder-500x500.jpg?w=200" class="matchResult" id="yourMatch">
@@ -113,25 +113,34 @@
     var narrowedArray = [];
     var yourMatch;
     var scaled;
+
+    $.ajax({
+            url: "/api/user",
+            method: "GET"
+        })
+        .done(function(data) {
+            userDataObj = data[0];
+
+        });
+
     $.ajax({
             url: "/api/friends",
             method: "GET"
         })
         .done(function(data) {
             var n = data.length;
-            extractUserProfile();
+            getData();
 
-            function extractUserProfile() {
+            function getData() {
                 for (var i = 0; i < n; i++) {
-                    if (i === n - 1) {
-                        userDataObj = data[i];
-                    } else {
-                        dataArray.push(data[i]);
-                    }
+
+                    dataArray.push(data[i]);
+
                 }
-                tossOut();
+                setTimeout(tossOut, 1000);
             }
         });
+
 
 
     // will toss out people who meet certain requirements
@@ -313,7 +322,7 @@
         var upperMatch = matchName.toUpperCase();
         $("#matchName").html(upperMatch);
         $("#matchAge").html(matchAge);
-        $("#matchBio").html("this person is a great match because ....");
+        $("#matchBio").html("");
         $("#yourMatch").attr("src", yourMatch.imageUrl);
         $("#userName").html(upperYou);
         $("#userBio").html(userDataObj.friendBio);

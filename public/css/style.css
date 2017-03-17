@@ -108,6 +108,11 @@ h1.res {
 p{
     margin-bottom: 0px;
 }
+
+.matchbox{
+    font-size: 20px;
+    padding: 6px;
+}
 #userName {
     margin-top: 10px;
     text-align: center;

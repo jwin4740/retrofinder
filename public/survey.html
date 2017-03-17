@@ -277,9 +277,9 @@
                 <br>
                 <br>
                 <div class="text-center">
-                    <a href="/results">
+                
                         <button id="submitSurvey" class="btn btn-lg btn-primary" style="background-color: red; color: black; font-weight: bolder; font-size: 24px"><span class="glyphicon glyphicon-check"></span> SUBMIT</button>
-                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -295,8 +295,8 @@
 
 
     // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
-    $(".submitSurvey").on("click", function(event) {
-        event.preventDefault();
+    $("#submitSurvey").on("click", function(event) {
+       
         var tempValNum;
         var lAvg = 0;
         var mAvg = 0;
@@ -348,12 +348,13 @@
             }
         }
         // constructs user profile object based on their inputs and answers
-        var newFriend = {
+        var userData = {
 
             friendName: $("#friend-name").val().trim(),
             friendEmail: $("#friend-email").val().trim(),
             imageUrl: $("#friend-image").val().trim(),
             shortBio: $("#friend-bio").val().trim(),
+            ageRange: $("#ageRange").val().trim(),
             gender: $("#gender").val(),
             multiplyer: $("#multiplyer").val(),
             reducer: $("#reducer").val(),
@@ -365,15 +366,15 @@
             interestsAverage: iAvg,
             superficialityAverage: sAvg
         };
-        console.log(newFriend);
+        console.log("hello" + userData);
         setTimeout(postIt, 1000);
 
 
         function postIt() {
-            console.log(newFriend);
+            console.log(userData);
             $.ajax({
-                    url: "/api/friends",
-                    data: newFriend,
+                    url: "/api/user",
+                    data: userData,
                     method: "POST"
                 })
                 .done(function(data) {

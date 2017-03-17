@@ -51,7 +51,7 @@ var friends = [{
     superficialityAverage: 2,
     compatibilityScore: 0,
     removalTag: "",
-    imageUrl: "https://www.teachforamerica.org/sites/default/files/styles/list_thumbnail/public/Elliot%20Sanchez%20Headshot.jpg?itok=4fb8-pa_"           
+    imageUrl: "https://www.teachforamerica.org/sites/default/files/styles/list_thumbnail/public/Elliot%20Sanchez%20Headshot.jpg?itok=4fb8-pa_"
 
 }, {
     friendName: "Sarah",
@@ -1204,6 +1204,7 @@ var friends = [{
 
 // Note how we export the array. This makes it accessible to other files ddsing reqddire.
 module.exports = friends;
+
 
 
 
