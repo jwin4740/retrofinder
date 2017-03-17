@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ranga" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!--     <style>
 .matchResult {
@@ -49,7 +49,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/survey">Take Survey<span class="sr-only">(current)</span></a></li>
+                    <li><a href="/survey">Take Survey<span class="sr-only">(current)</span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a target="_blank" href="/api/friends">API link</a></li>
@@ -66,54 +66,48 @@
         </div>
     </nav>
     <div class="container main">
-        <div class="jumbotron">
-            <h1 class="text-center"><span class="glyphicon glyphicon-user"></span> Your Match <span class="glyphicon glyphicon-user">
+        <div class="mainBanner">
+            <h1 class="text-center res"><span class="glyphicon glyphicon-user"></span> Your Match <span class="glyphicon glyphicon-user"></span></h1>
             <br>
-        </div>
-        <div class="row">
-         <div class="col-lg-1">
-            </div>
-            <div class="col-lg-4">
-                <!-- Current Tables in Use -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">You</h4>
+            <div class="row">
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-4">
+                    <!-- Current Tables in Use -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">You</h4>
+                        </div>
+                        <div class="panel-body matcher" id="you">
+                            <img class="matchResult" id="yourImage" src="./images/Placeholder.png">
+                            <h3 id="userName"></h3>
+                            <strong><p class="bio">AGE: (none) <span id="userAge"></span></p></strong>
+                            <br>
+                            <strong><p class="bio">SHORT BIO: <span id="userBio"></span> </p></strong>
+                        </div>
                     </div>
-                    <div class="panel-body" id="you">
-                        <img class="matchResult" id="yourImage" src="https://uwmccblog.files.wordpress.com/2017/01/image-placeholder-500x500.jpg?w=200">
-                        <h3 id="userName"></h3>
-                        <br>
-                        <strong><p class="bio">SHORT BIO: <span id="userBio"></span> </p></strong>
+                </div>
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-4">
+                    <!-- Current Tables in Use -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">Your match</h4>
+                        </div>
+                        <div class="panel-body matcher">
+                            <img src="https://uwmccblog.files.wordpress.com/2017/01/image-placeholder-500x500.jpg?w=200" class="matchResult" id="yourMatch">
+                            <h3 id="matchName"></h3>
+                            <strong><p class="bio">AGE: <span id="matchAge"></span></p></strong>
+                            <br>
+                            <strong><p class="bio">SHORT BIO: <span id="matchBio"></span></p></strong>
+                        </div>
                     </div>
                 </div>
             </div>
-              <div class="col-lg-2">
-            </div>
-            <div class="col-lg-4">
-                <!-- Current Tables in Use -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">Your match</h4>
-                    </div>
-                    <div class="panel-body">
-                        <img src="https://uwmccblog.files.wordpress.com/2017/01/image-placeholder-500x500.jpg?w=200" class="matchResult" id="yourMatch">
-                        <h3 id="matchName"></h3>
-                        <strong><p class="bio">AGE: <span id="matchAge"></span></p></strong>
-                        <br>
-                        <strong><p class="bio">SHORT BIO: <span id="matchBio"></span></p></strong>
-                    </div>
-                </div>
-            </div>
         </div>
-        <!-- <footer class="footer">
-            <div class="container">
-                <p>Control Panel</p>
-                <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> | <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a></p>
-            </div>
-        </footer> -->
     </div>
     <script>
-
     var dataArray = [];
     var userDataObj = "";
     var narrowedArray = [];
@@ -302,24 +296,21 @@
         yourMatch = narrowedArray[n - 1];
         console.log(yourMatch.friendName);
         var matchAge;
-        if (yourMatch.ageRange === "younger"){
-        matchAge = "(18 - 29)";
-    }
-    else if (yourMatch.ageRange === "mid"){
-        matchAge = "(30 - 39)";
-    }
-     else if (yourMatch.ageRange === "older"){
-        matchAge = "(40 - 49)";
-    }
-         else {
-        matchAge = "(none displayed)";
-    }
+        if (yourMatch.ageRange === "younger") {
+            matchAge = "(18 - 29)";
+        } else if (yourMatch.ageRange === "mid") {
+            matchAge = "(30 - 39)";
+        } else if (yourMatch.ageRange === "older") {
+            matchAge = "(40 - 49)";
+        } else {
+            matchAge = "(none displayed)";
+        }
 
-var yourName = userDataObj.friendName;
-var upperYou = yourName.toUpperCase();
+        var yourName = userDataObj.friendName;
+        var upperYou = yourName.toUpperCase();
 
-var matchName = yourMatch.friendName;
-var upperMatch = matchName.toUpperCase();
+        var matchName = yourMatch.friendName;
+        var upperMatch = matchName.toUpperCase();
         $("#matchName").html(upperMatch);
         $("#matchAge").html(matchAge);
         $("#matchBio").html("this person is a great match because ....");
